@@ -1,0 +1,56 @@
+.button-primary {
+  background-color: var(--submit-blue);
+  border: 3px solid var(--submit-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-primary:active {
+  background-color: var(--submit-blue-dark);
+}
+
+.button-primary:hover {
+  border: 3px solid var(--submit-blue-light);
+}
+
+.button-secondary {
+  background-color: var(--white);
+  border: 3px solid var(--gray-4);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-secondary:active {
+  background-color: var(--gray-1);
+}
+
+.button-secondary:hover {
+  border: 3px solid var(--gray-3);
+}
+
+.button-lms {
+  background-color: var(--minerva-orange);
+  border: 3px solid var(--minerva-orange);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-lms:active {
+  background-color: var(--minerva-orange-dark);
+}
+
+.button-lms:hover {
+  border: 3px solid var(--minerva-orange-light);
+}

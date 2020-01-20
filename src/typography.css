@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  --sans-font-family: "acumin-pro", sans-serif;
+}
+
+.h1 {
+  font-family: var(--serif-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.h2 {
+  font-family: var(--serif-font-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.h3 {
+  font-family: var(--serif-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.h4 {
+  font-family: var(--serif-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.body-l {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body-s {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.body-xs {
+  font-family: var(--sans-font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.bold {
+  font-weight: 600;
+}
+s
