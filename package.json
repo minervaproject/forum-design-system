@@ -1,0 +1,16 @@
+{
+  "name": "forum-design-system",
+  "version": "0.0.1",
+  "description": "",
+  "style": "src/index.css",
+  "main": "src/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minervaproject/forum-design-system.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/minervaproject/forum-design-system/issues"
+  },
+  "homepage": "https://github.com/minervaproject/forum-design-system#readme"
+}
