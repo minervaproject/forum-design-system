@@ -1,0 +1,47 @@
+// Helper functions
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Base colors
+$base-colors: (
+        "blue": #0A78BF,
+        "blue-green": #1596B4,
+        "green": #33AB6F,
+        "yellow-green": #8EA604,
+        "yellow": #F0B91E,
+        "orange": #F0871E,
+        "red": #DF2F26,
+        "red-violet": #A5417D,
+        "violet": #5B3E97,
+        "blue-violet": #322864
+);
+
+$black: #010101;
+$white: #FFFFFF;
+
+// NOTE: Sass variables should only be used to build CSS variables below
+
+:root {
+  // Base colors + shades + tints
+  @each $name, $color in $base-colors {
+    --#{$name}: #{$color};
+    --#{$name}-shade-40: #{shade($color, 40%)};
+    --#{$name}-shade-20: #{shade($color, 20%)};
+    --#{$name}-tint-20: #{tint($color, 20%)};
+    --#{$name}-tint-90: #{tint($color, 90%)};
+  }
+
+  // Black and white
+  --black: #{$black};
+  --white: #{$white};
+
+  // Grays
+  @each $tint in (10, 20, 40, 70, 90, 95) {
+    --black-tint-#{$tint}: #{tint($black, $tint)}
+  }
+}

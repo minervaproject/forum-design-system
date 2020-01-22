@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  --sans-font-family: "acumin-pro", sans-serif;
+}
+
+.h1 {
+  font-family: var(--serif-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.h2 {
+  font-family: var(--serif-font-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.h3 {
+  font-family: var(--serif-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.h4 {
+  font-family: var(--serif-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.body-l {
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body-s {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.body-xs {
+  font-family: var(--sans-font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+:root {
+  --blue: #0A78BF;
+  --blue-shade-40: #064873;
+  --blue-shade-20: #086099;
+  --blue-tint-20: #3b93cc;
+  --blue-tint-90: #e7f2f9;
+  --blue-green: #1596B4;
+  --blue-green-shade-40: #0d5a6c;
+  --blue-green-shade-20: #117890;
+  --blue-green-tint-20: #44abc3;
+  --blue-green-tint-90: #e8f5f8;
+  --green: #33AB6F;
+  --green-shade-40: #1f6743;
+  --green-shade-20: #298959;
+  --green-tint-20: #5cbc8c;
+  --green-tint-90: #ebf7f1;
+  --yellow-green: #8EA604;
+  --yellow-green-shade-40: #556402;
+  --yellow-green-shade-20: #728503;
+  --yellow-green-tint-20: #a5b836;
+  --yellow-green-tint-90: #f4f6e6;
+  --yellow: #F0B91E;
+  --yellow-shade-40: #906f12;
+  --yellow-shade-20: #c09418;
+  --yellow-tint-20: #f3c74b;
+  --yellow-tint-90: #fef8e9;
+  --orange: #F0871E;
+  --orange-shade-40: #905112;
+  --orange-shade-20: #c06c18;
+  --orange-tint-20: #f39f4b;
+  --orange-tint-90: #fef3e9;
+  --red: #DF2F26;
+  --red-shade-40: #861c17;
+  --red-shade-20: #b2261e;
+  --red-tint-20: #e55951;
+  --red-tint-90: #fceae9;
+  --red-violet: #A5417D;
+  --red-violet-shade-40: #63274b;
+  --red-violet-shade-20: #843464;
+  --red-violet-tint-20: #b76797;
+  --red-violet-tint-90: #f6ecf2;
+  --violet: #5B3E97;
+  --violet-shade-40: #37255b;
+  --violet-shade-20: #493279;
+  --violet-tint-20: #7c65ac;
+  --violet-tint-90: #efecf5;
+  --blue-violet: #322864;
+  --blue-violet-shade-40: #1e183c;
+  --blue-violet-shade-20: #282050;
+  --blue-violet-tint-20: #5b5383;
+  --blue-violet-tint-90: #ebeaf0;
+  --black: #010101;
+  --white: #FFFFFF;
+  --black-tint-10: #1a1a1a ;
+  --black-tint-20: #343434 ;
+  --black-tint-40: #676767 ;
+  --black-tint-70: #b3b3b3 ;
+  --black-tint-90: #e6e6e6 ;
+  --black-tint-95: #f2f2f2 ;
+}
+
+.button-primary {
+  background-color: var(--blue);
+  border: 3px solid var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-primary:active {
+  background-color: var(--blue-shade-40);
+}
+
+.button-primary:hover {
+  border: 3px solid var(--blue-tint-20);
+}
+
+.button-secondary {
+  background-color: var(--white);
+  border: 3px solid var(--black-tint-40);
+  color: var(--black);
+  cursor: pointer;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-secondary:active {
+  background-color: var(--black-tint-95);
+}
+
+.button-secondary:hover {
+  border: 3px solid var(--black-tint-70);
+}
+
+/*# sourceMappingURL=forum-design-system.css.map */
