@@ -143,39 +143,35 @@
 }
 
 .button-primary {
-  background-color: var(--blue);
-  border: 3px solid var(--blue);
-  color: var(--white);
   cursor: pointer;
   font-family: var(--sans-font-family);
   font-size: 16px;
   font-weight: bold;
   padding: 6px 30px;
+  background-color: var(--blue);
+  border: 3px solid var(--blue);
+  color: var(--white);
 }
-
 .button-primary:active {
   background-color: var(--blue-shade-40);
 }
-
 .button-primary:hover {
   border: 3px solid var(--blue-tint-20);
 }
 
 .button-secondary {
-  background-color: var(--white);
-  border: 3px solid var(--black-tint-40);
-  color: var(--black);
   cursor: pointer;
   font-family: var(--sans-font-family);
   font-size: 16px;
   font-weight: bold;
   padding: 6px 30px;
+  background-color: var(--white);
+  border: 3px solid var(--black-tint-40);
+  color: var(--black);
 }
-
 .button-secondary:active {
   background-color: var(--black-tint-95);
 }
-
 .button-secondary:hover {
   border: 3px solid var(--black-tint-70);
 }
