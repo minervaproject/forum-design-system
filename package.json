@@ -12,5 +12,14 @@
   "bugs": {
     "url": "https://github.com/minervaproject/forum-design-system/issues"
   },
-  "homepage": "https://github.com/minervaproject/forum-design-system#readme"
+  "homepage": "https://github.com/minervaproject/forum-design-system#readme",
+  "devDependencies": {
+    "caniuse-lite": "^1.0.30001022",
+    "postcss": "^7.0.26",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "build": "postcss src/index.css -o dist/forum-design-system.css"
+  }
 }

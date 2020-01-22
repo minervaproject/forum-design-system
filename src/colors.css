@@ -32,6 +32,12 @@
 
   /* HCs/Grades */
   /* Poll Colors */
+  /* Test */
+  --purple: #322864;
+  --purple-shade-40: color-mod(var(--purple) shade(40%));
+  --purple-shade-20: color-mod(var(--purple) shade(20%));
+  --purple-tint-20: color-mod(var(--purple) tint(20%));
+  --purple-tint-90: color-mod(var(--purple) tint(90%));
 }
 
 .bg-gray-2 {

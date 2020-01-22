@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  --sans-font-family: "acumin-pro", sans-serif;
+}
+
+.h1 {
+  font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  font-family: var(--serif-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.h2 {
+  font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  font-family: var(--serif-font-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.h3 {
+  font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  font-family: var(--serif-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.h4 {
+  font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  font-family: var(--serif-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.body-l {
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body {
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.body-s {
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.body-xs {
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+:root {
+  /* UI Colors */
+  --black: #000000;
+  --white: #ffffff;
+  --tuna: #323641;
+  --dark-cerulean: #08487d;
+  --dodger-blue: #0f83e3;
+  --tawny: #d14c0e;
+  --light-salmon: #ffa378;
+
+  /* Grays */
+  --gray-0: #fafafa;
+  --gray-1: #f5f5f5;
+  --gray-2: #eeeeee;
+  --gray-3: #cccccc;
+  --gray-4: #97979f;
+  --gray-5: #666666;
+  --gray-6: #505055;
+  --gray-7: #333333;
+
+  /* Text Colors */
+  --text-color: var(--black);
+  --secondary-text-color: var(--gray-5);
+
+  /* Classroom Colors */
+  --minerva-orange: #f45910;
+  --minerva-orange-dark: #d14c03;
+  --minerva-orange-light: #ffa378;
+  --submit-blue: #125ea2;
+  --submit-blue-dark: #08487d;
+  --submit-blue-light: #0f83e3;
+
+  /* HCs/Grades */
+  /* Poll Colors */
+  /* Test */
+  --purple: #322864;
+  --purple-shade-40: rgb(30, 24, 60);
+  --purple-shade-20: rgb(40, 32, 80);
+  --purple-tint-20: rgb(91, 83, 131);
+  --purple-tint-90: rgb(235, 234, 240);
+}
+
+.bg-gray-2 {
+  background-color: #eeeeee;
+  background-color: var(--gray-2);
+}
+
+.button-primary {
+  background-color: #125ea2;
+  background-color: var(--submit-blue);
+  border: 3px solid #125ea2;
+  border: 3px solid var(--submit-blue);
+  color: #ffffff;
+  color: var(--white);
+  cursor: pointer;
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-primary:active {
+  background-color: #08487d;
+  background-color: var(--submit-blue-dark);
+}
+
+.button-primary:hover {
+  border: 3px solid #0f83e3;
+  border: 3px solid var(--submit-blue-light);
+}
+
+.button-secondary {
+  background-color: #ffffff;
+  background-color: var(--white);
+  border: 3px solid #97979f;
+  border: 3px solid var(--gray-4);
+  color: #666666;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-secondary:active {
+  background-color: #f5f5f5;
+  background-color: var(--gray-1);
+}
+
+.button-secondary:hover {
+  border: 3px solid #cccccc;
+  border: 3px solid var(--gray-3);
+}
+
+.button-lms {
+  background-color: #f45910;
+  background-color: var(--minerva-orange);
+  border: 3px solid #f45910;
+  border: 3px solid var(--minerva-orange);
+  color: #ffffff;
+  color: var(--white);
+  cursor: pointer;
+  font-family: "acumin-pro", sans-serif;
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+
+.button-lms:active {
+  background-color: #d14c03;
+  background-color: var(--minerva-orange-dark);
+}
+
+.button-lms:hover {
+  border: 3px solid #ffa378;
+  border: 3px solid var(--minerva-orange-light);
+}
