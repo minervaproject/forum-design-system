@@ -8,18 +8,16 @@ It is also recommended that you use the design system with [Basscss](https://bas
 
 ## Installation
 
-Go to the [releases](https://github.com/minervaproject/forum-design-system/releases) page and copy the latest `tar.gz` link. Then include it in your `package.json` file like this:
+Add the following to your `package.json`. You can check the [releases](https://github.com/minervaproject/forum-design-system/releases) page for the latest version.
 
 ```
-"forum-design-system": "https://github.com/minervaproject/forum-design-system/archive/v0.0.1.tar.gz",
+"forum-design-system": "https://github.com/minervaproject/forum-design-system#v0.0.2",
 ```
 
 We recommend importing the design system CSS after Basscss but before your custom styles, like this:
 
 ```
-import "../../public/stylesheets/basscss.min.css";
-import "../../node_modules/forum-design-system/dist/forum-design-system.css";
-import "stylesheets/screen.scss";
+import "forum-design-system/dist/forum-design-system.css";
 ```
 
 ## Documentation
