@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/minervaproject/forum-design-system/issues"
   },
-  "homepage": "https://github.com/minervaproject/forum-design-system#readme"
+  "homepage": "https://github.com/minervaproject/forum-design-system#readme",
+  "scripts": {
+    "build": "sass src/index.scss dist/forum-design-system.css"
+  }
 }
