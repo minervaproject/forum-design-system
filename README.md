@@ -18,7 +18,7 @@ We recommend importing the design system CSS after Basscss but before your custo
 
 ```
 import "../../public/stylesheets/basscss.min.css";
-import "../../node_modules/forum-design-system/src/index.css";
+import "../../node_modules/forum-design-system/dist/forum-design-system.css";
 import "stylesheets/screen.scss";
 ```
 
