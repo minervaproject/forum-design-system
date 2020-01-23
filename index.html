@@ -4,6 +4,20 @@
   <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
   <link href="dist/forum-design-system.css" rel="stylesheet">
   <script async defer src="https://use.typekit.net/vuu5fkn.js" onload="try{Typekit.load({ async: true });}catch(e){}"></script>
+
+  <style>
+    body {
+      max-width: 800px;
+    }
+
+    .swatch {
+      width: 200px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body class="p2">
 <h1 class="h1">Forum Design System</h1>
@@ -36,9 +50,120 @@
 &lt;div class="bold-xs">bold-xs&lt;/div>
 </code></pre>
 
-<h2 class="h2 my2">Colors</h2>
+<h2 class="h2 mt3 mb2">Colors</h2>
 
-<h2 class="h2 my2">Buttons</h2>
+<p class="body">All colors are available through CSS variables. Aside from black and white, there are 10 base colors. Each base color has two shades and two tints. There are six tints of black (i.e., six shades of gray). You can refer to them directly in your CSS like this:</p>
+
+<pre class="my2 p1 bg-black-tint-90"><code>.some-custom-class {
+  color: var(--black);
+}
+</code></pre>
+
+<p class="body">There are also classes for each color to set the background color of an element:</p>
+
+<div class="flex mb2 body">
+  <div class="mr2">
+    <div class="swatch bg-black text-white">bg-black</div>
+    <div class="swatch bg-black-tint-10 text-white">bg-black-tint-10</div>
+    <div class="swatch bg-black-tint-20 text-white">bg-black-tint-20</div>
+    <div class="swatch bg-black-tint-40 text-black">bg-black-tint-40</div>
+    <div class="swatch bg-black-tint-70 text-black">bg-black-tint-70</div>
+    <div class="swatch bg-black-tint-90 text-black">bg-black-tint-90</div>
+    <div class="swatch bg-black-tint-95 text-black">bg-black-tint-95</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-white text-black">bg-white</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-blue text-white">bg-blue</div>
+    <div class="swatch bg-blue-shade-40 text-white">bg-blue-shade-40</div>
+    <div class="swatch bg-blue-shade-20 text-white">bg-blue-shade-20</div>
+    <div class="swatch bg-blue-tint-20 text-black">bg-blue-tint-20</div>
+    <div class="swatch bg-blue-tint-90 text-black">bg-blue-tint-90</div>
+  </div>
+</div>
+
+<div class="flex mb2 body">
+  <div class="mr2">
+    <div class="swatch bg-blue-green text-white">bg-blue-green</div>
+    <div class="swatch bg-blue-green-shade-40 text-white">bg-blue-green-shade-40</div>
+    <div class="swatch bg-blue-green-shade-20 text-white">bg-blue-green-shade-20</div>
+    <div class="swatch bg-blue-green-tint-20 text-black">bg-blue-green-tint-20</div>
+    <div class="swatch bg-blue-green-tint-90 text-black">bg-blue-green-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-green text-white">bg-green</div>
+    <div class="swatch bg-green-shade-40 text-white">bg-green-shade-40</div>
+    <div class="swatch bg-green-shade-20 text-white">bg-green-shade-20</div>
+    <div class="swatch bg-green-tint-20 text-black">bg-green-tint-20</div>
+    <div class="swatch bg-green-tint-90 text-black">bg-green-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-yellow-green text-white">bg-yellow-green</div>
+    <div class="swatch bg-yellow-green-shade-40 text-white">bg-yellow-green-shade-40</div>
+    <div class="swatch bg-yellow-green-shade-20 text-white">bg-yellow-green-shade-20</div>
+    <div class="swatch bg-yellow-green-tint-20 text-black">bg-yellow-green-tint-20</div>
+    <div class="swatch bg-yellow-green-tint-90 text-black">bg-yellow-green-tint-90</div>
+  </div>
+</div>
+
+<div class="flex mb2 body">
+  <div class="mr2">
+    <div class="swatch bg-yellow text-white">bg-yellow</div>
+    <div class="swatch bg-yellow-shade-40 text-white">bg-yellow-shade-40</div>
+    <div class="swatch bg-yellow-shade-20 text-white">bg-yellow-shade-20</div>
+    <div class="swatch bg-yellow-tint-20 text-black">bg-yellow-tint-20</div>
+    <div class="swatch bg-yellow-tint-90 text-black">bg-yellow-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-orange text-white">bg-orange</div>
+    <div class="swatch bg-orange-shade-40 text-white">bg-orange-shade-40</div>
+    <div class="swatch bg-orange-shade-20 text-white">bg-orange-shade-20</div>
+    <div class="swatch bg-orange-tint-20 text-black">bg-orange-tint-20</div>
+    <div class="swatch bg-orange-tint-90 text-black">bg-orange-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-red text-white">bg-red</div>
+    <div class="swatch bg-red-shade-40 text-white">bg-red-shade-40</div>
+    <div class="swatch bg-red-shade-20 text-white">bg-red-shade-20</div>
+    <div class="swatch bg-red-tint-20 text-black">bg-red-tint-20</div>
+    <div class="swatch bg-red-tint-90 text-black">bg-red-tint-90</div>
+  </div>
+</div>
+
+<div class="flex body">
+  <div class="mr2">
+    <div class="swatch bg-red-violet text-white">bg-red-violet</div>
+    <div class="swatch bg-red-violet-shade-40 text-white">bg-red-violet-shade-40</div>
+    <div class="swatch bg-red-violet-shade-20 text-white">bg-red-violet-shade-20</div>
+    <div class="swatch bg-red-violet-tint-20 text-black">bg-red-violet-tint-20</div>
+    <div class="swatch bg-red-violet-tint-90 text-black">bg-red-violet-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-violet text-white">bg-violet</div>
+    <div class="swatch bg-violet-shade-40 text-white">bg-violet-shade-40</div>
+    <div class="swatch bg-violet-shade-20 text-white">bg-violet-shade-20</div>
+    <div class="swatch bg-violet-tint-20 text-white">bg-violet-tint-20</div>
+    <div class="swatch bg-violet-tint-90 text-black">bg-violet-tint-90</div>
+  </div>
+
+  <div class="mr2">
+    <div class="swatch bg-blue-violet text-white">bg-blue-violet</div>
+    <div class="swatch bg-blue-violet-shade-40 text-white">bg-blue-violet-shade-40</div>
+    <div class="swatch bg-blue-violet-shade-20 text-white">bg-blue-violet-shade-20</div>
+    <div class="swatch bg-blue-violet-tint-20 text-white">bg-blue-violet-tint-20</div>
+    <div class="swatch bg-blue-violet-tint-90 text-black">bg-blue-violet-tint-90</div>
+  </div>
+</div>
+
+<h2 class="h2 mt3 mb2">Buttons</h2>
 
 <button class="button-primary mr1">Primary</button>
 <button class="button-secondary mr1">Secondary</button>

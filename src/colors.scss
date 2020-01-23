@@ -57,8 +57,22 @@ $all-colors: map-merge($all-colors, (
   }
 }
 
+// Background colors
 @each $name, $color in $all-colors {
   .bg-#{$name} {
     background-color: $color;
   }
+}
+
+// Text colors
+.text-black {
+  color: var(--black);
+}
+
+.text-black-tint-40 {
+  color: var(--black-tint-40);
+}
+
+.text-white {
+  color: var(--white);
 }
