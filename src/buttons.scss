@@ -1,8 +1,6 @@
 @mixin base-button {
+  @include body(var(--font-weight-bold));
   cursor: pointer;
-  font-family: var(--sans-font-family);
-  font-size: 16px;
-  font-weight: bold;
   padding: 6px 30px;
 
   &:disabled {
@@ -48,4 +46,10 @@
   &:active:enabled {
     background-color: var(--black-tint-90);
   }
+}
+
+.button-secondary-small {
+  @extend .button-secondary;
+  @include body-s(var(--font-weight-bold));
+  padding: 4px 15px;
 }

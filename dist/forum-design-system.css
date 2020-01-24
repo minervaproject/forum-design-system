@@ -11,13 +11,15 @@
 :root {
   --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
   --sans-font-family: "acumin-pro", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
 }
 
 .h1 {
   font-family: var(--serif-font-family);
   font-size: 36px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 43px;
 }
 
@@ -25,7 +27,7 @@
   font-family: var(--serif-font-family);
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 32px;
 }
 
@@ -33,7 +35,7 @@
   font-family: var(--serif-font-family);
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 22px;
 }
 
@@ -41,7 +43,7 @@
   font-family: var(--serif-font-family);
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 17px;
 }
 
@@ -49,7 +51,7 @@
   font-family: var(--sans-font-family);
   font-size: 18px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   line-height: 24px;
 }
 
@@ -57,7 +59,7 @@
   font-family: var(--sans-font-family);
   font-size: 16px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   line-height: 24px;
 }
 
@@ -65,7 +67,7 @@
   font-family: var(--sans-font-family);
   font-size: 14px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   line-height: 18px;
 }
 
@@ -73,12 +75,12 @@
   font-family: var(--sans-font-family);
   font-size: 12px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   line-height: 16px;
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 :root {
@@ -387,10 +389,12 @@
 }
 
 .button-primary {
-  cursor: pointer;
   font-family: var(--sans-font-family);
   font-size: 16px;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  cursor: pointer;
   padding: 6px 30px;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
@@ -412,27 +416,38 @@
   border-color: var(--blue-shade-40);
 }
 
-.button-secondary {
-  cursor: pointer;
+.button-secondary, .button-secondary-small {
   font-family: var(--sans-font-family);
   font-size: 16px;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  cursor: pointer;
   padding: 6px 30px;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
 }
-.button-secondary:disabled {
+.button-secondary:disabled, .button-secondary-small:disabled {
   background-color: var(--black-tint-90);
   border-color: var(--black-tint-90);
   color: var(--black-tint-70);
   cursor: not-allowed;
 }
-.button-secondary:hover:enabled {
+.button-secondary:hover:enabled, .button-secondary-small:hover:enabled {
   background-color: var(--black-tint-95);
 }
-.button-secondary:active:enabled {
+.button-secondary:active:enabled, .button-secondary-small:active:enabled {
   background-color: var(--black-tint-90);
+}
+
+.button-secondary-small {
+  font-family: var(--sans-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 18px;
+  padding: 4px 15px;
 }
 
 /*# sourceMappingURL=forum-design-system.css.map */

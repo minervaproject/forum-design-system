@@ -13,72 +13,106 @@
 :root {
   --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
   --sans-font-family: "acumin-pro", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
 }
 
-.h1 {
+@mixin h1 {
   font-family: var(--serif-font-family);
   font-size: 36px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 43px;
 }
 
-.h2 {
+.h1 {
+  @include h1;
+}
+
+@mixin h2 {
   font-family: var(--serif-font-family);
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 32px;
 }
 
-.h3 {
+.h2 {
+  @include h2;
+}
+
+@mixin h3 {
   font-family: var(--serif-font-family);
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 22px;
 }
 
-.h4 {
+.h3 {
+  @include h3;
+}
+
+@mixin h4 {
   font-family: var(--serif-font-family);
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 17px;
 }
 
-.body-l {
+.h4 {
+  @include h4;
+}
+
+@mixin body-l($font-weight: var(--font-weight-normal)) {
   font-family: var(--sans-font-family);
   font-size: 18px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $font-weight;
+  line-height: 24px;
+}
+
+.body-l {
+  @include body-l;
+}
+
+@mixin body($font-weight: var(--font-weight-normal)) {
+  font-family: var(--sans-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: $font-weight;
   line-height: 24px;
 }
 
 .body {
-  font-family: var(--sans-font-family);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 24px;
+  @include body;
 }
 
-.body-s {
+@mixin body-s($font-weight: var(--font-weight-normal)) {
   font-family: var(--sans-font-family);
   font-size: 14px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $font-weight;
   line-height: 18px;
 }
 
-.body-xs {
+.body-s {
+  @include body-s;
+}
+
+@mixin body-xs($font-weight: var(--font-weight-normal)) {
   font-family: var(--sans-font-family);
   font-size: 12px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $font-weight;
   line-height: 16px;
 }
 
+.body-xs {
+  @include body-xs;
+}
+
 .bold {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
