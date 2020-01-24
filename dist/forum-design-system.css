@@ -450,4 +450,21 @@
   padding: 4px 15px;
 }
 
+.text-button {
+  font-family: var(--sans-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  background: none;
+  border: none;
+  color: var(--blue-shade-20);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+.text-button:disabled {
+  color: var(--black-tint-70);
+}
+
 /*# sourceMappingURL=forum-design-system.css.map */

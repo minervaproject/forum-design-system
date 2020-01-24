@@ -53,3 +53,17 @@
   @include body-s(var(--font-weight-bold));
   padding: 4px 15px;
 }
+
+.text-button {
+  @include body;
+  background: none;
+  border: none;
+  color: var(--blue-shade-20);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+
+  &:disabled {
+    color: var(--black-tint-70);
+  }
+}
