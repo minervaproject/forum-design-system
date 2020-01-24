@@ -23,15 +23,15 @@
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
 
-  &:active:enabled {
-    background-color: var(--blue-shade-40);
-    border-color: var(--blue-shade-40);
-  }
-
   &:hover:enabled {
     @include raised-button-shadow;
     background-color: var(--blue);
     border-color: var(--blue);
+  }
+
+  &:active:enabled {
+    background-color: var(--blue-shade-40);
+    border-color: var(--blue-shade-40);
   }
 }
 
@@ -41,11 +41,11 @@
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
 
-  &:active:enabled {
-    background-color: var(--black-tint-90);
-  }
-
   &:hover:enabled {
     background-color: var(--black-tint-95);
+  }
+
+  &:active:enabled {
+    background-color: var(--black-tint-90);
   }
 }
