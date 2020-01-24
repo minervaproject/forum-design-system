@@ -4,34 +4,48 @@
   font-size: 16px;
   font-weight: bold;
   padding: 6px 30px;
+
+  &:disabled {
+    background-color: var(--black-tint-90);
+    border-color: var(--black-tint-90);
+    color: var(--black-tint-70);
+    cursor: not-allowed;
+  }
+}
+
+@mixin raised-button-shadow {
+  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
 }
 
 .button-primary {
   @include base-button;
-  background-color: var(--blue);
-  border: 3px solid var(--blue);
+  background-color: var(--blue-shade-20);
+  border: 1px solid var(--blue-shade-20);
   color: var(--white);
 
-  &:active {
+  &:active:enabled {
     background-color: var(--blue-shade-40);
+    border-color: var(--blue-shade-40);
   }
 
-  &:hover {
-    border: 3px solid var(--blue-tint-20);
+  &:hover:enabled {
+    @include raised-button-shadow;
+    background-color: var(--blue);
+    border-color: var(--blue);
   }
 }
 
 .button-secondary {
   @include base-button;
   background-color: var(--white);
-  border: 3px solid var(--black-tint-40);
-  color: var(--black);
+  border: 1px solid var(--black-tint-40);
+  color: var(--black-tint-40);
 
-  &:active {
-    background-color: var(--black-tint-95);
+  &:active:enabled {
+    background-color: var(--black-tint-90);
   }
 
-  &:hover {
-    border: 3px solid var(--black-tint-70);
+  &:hover:enabled {
+    background-color: var(--black-tint-95);
   }
 }
