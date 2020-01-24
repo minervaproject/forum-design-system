@@ -392,15 +392,24 @@
   font-size: 16px;
   font-weight: bold;
   padding: 6px 30px;
-  background-color: var(--blue);
-  border: 3px solid var(--blue);
+  background-color: var(--blue-shade-20);
+  border: 1px solid var(--blue-shade-20);
   color: var(--white);
 }
-.button-primary:active {
-  background-color: var(--blue-shade-40);
+.button-primary:disabled {
+  background-color: var(--black-tint-90);
+  border-color: var(--black-tint-90);
+  color: var(--black-tint-70);
+  cursor: not-allowed;
 }
-.button-primary:hover {
-  border: 3px solid var(--blue-tint-20);
+.button-primary:active:enabled {
+  background-color: var(--blue-shade-40);
+  border-color: var(--blue-shade-40);
+}
+.button-primary:hover:enabled {
+  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .button-secondary {
@@ -410,14 +419,20 @@
   font-weight: bold;
   padding: 6px 30px;
   background-color: var(--white);
-  border: 3px solid var(--black-tint-40);
-  color: var(--black);
+  border: 1px solid var(--black-tint-40);
+  color: var(--black-tint-40);
 }
-.button-secondary:active {
+.button-secondary:disabled {
+  background-color: var(--black-tint-90);
+  border-color: var(--black-tint-90);
+  color: var(--black-tint-70);
+  cursor: not-allowed;
+}
+.button-secondary:active:enabled {
+  background-color: var(--black-tint-90);
+}
+.button-secondary:hover:enabled {
   background-color: var(--black-tint-95);
-}
-.button-secondary:hover {
-  border: 3px solid var(--black-tint-70);
 }
 
 /*# sourceMappingURL=forum-design-system.css.map */
