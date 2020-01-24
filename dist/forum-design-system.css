@@ -17,66 +17,66 @@
 
 .h1 {
   font-family: var(--serif-font-family);
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 43px;
+  line-height: calc(11 / 9);
 }
 
 .h2 {
   font-family: var(--serif-font-family);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 32px;
+  line-height: calc(4 / 3);
 }
 
 .h3 {
   font-family: var(--serif-font-family);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 22px;
+  line-height: calc(4 / 3);
 }
 
 .h4 {
   font-family: var(--serif-font-family);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 17px;
+  line-height: calc(10 / 7);
 }
 
 .body-l {
   font-family: var(--sans-font-family);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: 24px;
+  line-height: calc(4 / 3);
 }
 
 .body {
   font-family: var(--sans-font-family);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .body-s {
   font-family: var(--sans-font-family);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: 18px;
+  line-height: calc(10 / 7);
 }
 
 .body-xs {
   font-family: var(--sans-font-family);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: 16px;
+  line-height: calc(4 / 3);
 }
 
 .bold {
@@ -390,10 +390,10 @@
 
 .button-primary {
   font-family: var(--sans-font-family);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 24px;
+  line-height: 1.5;
   cursor: pointer;
   padding: 6px 30px;
   background-color: var(--blue-shade-20);
@@ -418,10 +418,10 @@
 
 .button-secondary, .button-secondary-small {
   font-family: var(--sans-font-family);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 24px;
+  line-height: 1.5;
   cursor: pointer;
   padding: 6px 30px;
   background-color: var(--white);
@@ -443,10 +443,10 @@
 
 .button-secondary-small {
   font-family: var(--sans-font-family);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: 18px;
+  line-height: calc(10 / 7);
   padding: 4px 15px;
 }
 
