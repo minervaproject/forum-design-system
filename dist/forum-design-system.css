@@ -465,6 +465,7 @@
 }
 .text-button:disabled {
   color: var(--black-tint-70);
+  cursor: not-allowed;
 }
 
 /*# sourceMappingURL=forum-design-system.css.map */

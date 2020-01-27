@@ -65,5 +65,6 @@
 
   &:disabled {
     color: var(--black-tint-70);
+    cursor: not-allowed;
   }
 }
