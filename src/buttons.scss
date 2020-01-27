@@ -1,7 +1,7 @@
 @mixin base-button {
   @include body(var(--font-weight-bold));
   cursor: pointer;
-  padding: 6px 30px;
+  padding: 5px 28px;
 
   &:disabled {
     background-color: var(--black-tint-90);
@@ -51,7 +51,7 @@
 .button-secondary-small {
   @extend .button-secondary;
   @include body-s(var(--font-weight-bold));
-  padding: 4px 15px;
+  padding: 5px 16px;
 }
 
 .text-button {

@@ -395,7 +395,7 @@
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
   cursor: pointer;
-  padding: 6px 30px;
+  padding: 5px 28px;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
@@ -423,7 +423,7 @@
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
   cursor: pointer;
-  padding: 6px 30px;
+  padding: 5px 28px;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
@@ -447,7 +447,7 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: calc(10 / 7);
-  padding: 4px 15px;
+  padding: 5px 16px;
 }
 
 .text-button {
