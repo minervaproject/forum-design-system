@@ -49,6 +49,16 @@ $all-colors: map-merge($all-colors, (
   ));
 }
 
+// Add aliases for HC colors
+$all-colors: map-merge($all-colors, (
+        "hc-0": map-get($all-colors, "black-tint-90"),
+        "hc-1": map-get($all-colors, "red"),
+        "hc-2": map-get($all-colors, "orange"),
+        "hc-3": map-get($all-colors, "green"),
+        "hc-4": map-get($all-colors, "blue"),
+        "hc-5": map-get($all-colors, "violet"),
+));
+
 // Copy all Sass variables to CSS variables
 :root {
   // Base colors + shades + tints

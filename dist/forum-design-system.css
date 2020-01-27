@@ -142,6 +142,12 @@
   --black-tint-70: #b3b3b3;
   --black-tint-90: #e6e6e6;
   --black-tint-95: #f2f2f2;
+  --hc-0: #e6e6e6;
+  --hc-1: #DF2F26;
+  --hc-2: #F0871E;
+  --hc-3: #33AB6F;
+  --hc-4: #0A78BF;
+  --hc-5: #5B3E97;
 }
 
 .bg-blue {
@@ -374,6 +380,30 @@
 
 .bg-black-tint-95 {
   background-color: #f2f2f2;
+}
+
+.bg-hc-0 {
+  background-color: #e6e6e6;
+}
+
+.bg-hc-1 {
+  background-color: #DF2F26;
+}
+
+.bg-hc-2 {
+  background-color: #F0871E;
+}
+
+.bg-hc-3 {
+  background-color: #33AB6F;
+}
+
+.bg-hc-4 {
+  background-color: #0A78BF;
+}
+
+.bg-hc-5 {
+  background-color: #5B3E97;
 }
 
 .text-black {
