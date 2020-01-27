@@ -750,7 +750,6 @@
   text-decoration: none;
 }
 .text-button:hover:enabled {
-  color: var(--blue);
   text-decoration: underline;
 }
 .text-button:active:enabled {
@@ -766,7 +765,6 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--blue);
   text-decoration: underline;
 }
 a:active {
