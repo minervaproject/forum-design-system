@@ -1,0 +1,14 @@
+// Default link style will be applied to all <a> elements
+a {
+  color: var(--blue-shade-20);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: var(--blue-shade-40);
+  }
+}

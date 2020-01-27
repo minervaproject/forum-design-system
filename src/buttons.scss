@@ -63,6 +63,15 @@
   padding: 0;
   text-decoration: none;
 
+  &:hover:enabled {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+
+  &:active:enabled {
+    color: var(--blue-shade-40);
+  }
+
   &:disabled {
     color: var(--black-tint-70);
     cursor: not-allowed;
