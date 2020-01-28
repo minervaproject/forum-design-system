@@ -27,7 +27,7 @@
 
   > *:first-child {
     height: auto;
-    width: 16px;
+    width: 16px !important;
     margin-right: 0.5rem;
   }
 }

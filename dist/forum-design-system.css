@@ -505,7 +505,7 @@
 }
 .button-primary-icon > *:first-child {
   height: auto;
-  width: 16px;
+  width: 16px !important;
   margin-right: 0.5rem;
 }
 .button-primary-icon:hover:enabled {
@@ -543,7 +543,7 @@
 }
 .button-secondary-icon > *:first-child {
   height: auto;
-  width: 16px;
+  width: 16px !important;
   margin-right: 0.5rem;
 }
 .button-secondary-icon:hover:enabled {
