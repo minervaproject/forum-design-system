@@ -480,6 +480,80 @@
   padding: 5px 16px;
 }
 
+.button-primary-icon {
+  font-family: var(--sans-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(10 / 7);
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0 0 1.5rem;
+  text-align: left;
+  background-color: var(--blue-shade-20);
+  border: 1px solid var(--blue-shade-20);
+  color: var(--white);
+}
+.button-primary-icon:disabled {
+  background-color: var(--black-tint-90);
+  border-color: var(--black-tint-90);
+  color: var(--black-tint-70);
+  cursor: not-allowed;
+}
+.button-primary-icon > *:first-child {
+  height: auto;
+  width: 16px !important;
+  margin-right: 0.5rem;
+}
+.button-primary-icon:hover:enabled {
+  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.button-primary-icon:active:enabled {
+  background-color: var(--blue-shade-40);
+  border-color: var(--blue-shade-40);
+}
+
+.button-secondary-icon {
+  font-family: var(--sans-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(10 / 7);
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0 0 1.5rem;
+  text-align: left;
+  background-color: var(--white);
+  border: 1px solid var(--black-tint-40);
+  color: var(--black-tint-40);
+}
+.button-secondary-icon:disabled {
+  background-color: var(--black-tint-90);
+  border-color: var(--black-tint-90);
+  color: var(--black-tint-70);
+  cursor: not-allowed;
+}
+.button-secondary-icon > *:first-child {
+  height: auto;
+  width: 16px !important;
+  margin-right: 0.5rem;
+}
+.button-secondary-icon:hover:enabled {
+  background-color: var(--black-tint-95);
+}
+.button-secondary-icon:active:enabled {
+  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
+  background-color: var(--black-tint-90);
+}
+
 .text-button {
   font-family: var(--sans-font-family);
   font-size: 1rem;

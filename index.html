@@ -38,7 +38,7 @@
 <div class="h3">h3</div>
 <div class="h4">h4</div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;div class="h1">h1&lt;/div>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;div class="h1">h1&lt;/div>
 &lt;div class="h2">h2&lt;/div>
 &lt;div class="h3">h3&lt;/div>
 &lt;div class="h4">h4&lt;/div>
@@ -50,7 +50,7 @@
 <div class="body-xs">body-xs</div>
 <div class="body bold">bold</div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;div class="body-l">body-l&lt;/div>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;div class="body-l">body-l&lt;/div>
 &lt;div class="body">body&lt;/div>
 &lt;div class="body-s">body-s&lt;/div>
 &lt;div class="body-xs">body-xs&lt;/div>
@@ -61,7 +61,7 @@
 
 <p class="body">All colors are available through CSS variables. Aside from black and white, there are 10 base colors. Each base color has two shades and two tints. There are six tints of black (i.e., six shades of gray). You can refer to them directly in your CSS like this:</p>
 
-<pre class="my2 p1 bg-black-tint-90"><code>.some-custom-class {
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>.some-custom-class {
   background-color: var(--blue-shade-40);
   color: var(--black-tint-90);
 }
@@ -200,41 +200,85 @@
 
 <h3 class="h3 mb2">Main Buttons</h3>
 
-<div>
+<div class="flex">
   <button class="button-primary mr1">Primary</button>
   <button class="button-primary" disabled>Disabled</button>
 </div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;button class="button-primary mr1">Primary&lt;/button>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="button-primary mr1">Primary&lt;/button>
 &lt;button class="button-primary" disabled>Disabled&lt;/button>
 </code></pre>
 
-<div>
+<div class="flex">
   <button class="button-secondary mr1">Secondary</button>
   <button class="button-secondary" disabled>Disabled</button>
 </div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;button class="button-secondary mr1">Secondary&lt;/button>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="button-secondary mr1">Secondary&lt;/button>
 &lt;button class="button-secondary" disabled>Disabled&lt;/button>
 </code></pre>
 
 <h3 class="h3 mt3 mb2">Other Buttons</h3>
 
-<div>
+<div class="flex">
   <button class="button-secondary-small mr1">Secondary Small</button>
   <button class="button-secondary-small" disabled>Disabled</button>
 </div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;button class="button-secondary-small mr1">Secondary Small&lt;/button>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="button-secondary-small mr1">Secondary Small&lt;/button>
 &lt;button class="button-secondary-small" disabled>Disabled&lt;/button>
 </code></pre>
 
-<div>
+<div class="flex col-6">
+  <button class="button-primary-icon mr1">
+    <img src="icons/icon-star-white.svg" alt="Sample icon">
+    <span>Primary Icon</span>
+  </button>
+  <button class="button-primary-icon" disabled>
+    <img src="icons/icon-star.svg" alt="Sample icon">
+    <span>Disabled</span>
+  </button>
+</div>
+
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="button-primary-icon mr1">
+  &lt;img src="icon-star-white.svg" alt="Sample icon">
+  &lt;span>Primary Icon&lt;/span>
+&lt;/button>
+
+&lt;button class="button-primary-icon mr1" disabled>
+  &lt;img src="icon-star.svg" alt="Sample icon">
+  &lt;span>Disabled&lt;/span>
+&lt;/button>
+</code></pre>
+
+<div class="flex col-6">
+  <button class="button-secondary-icon mr1">
+    <img src="icons/icon-star.svg" alt="Sample icon">
+    <span>Primary Icon</span>
+  </button>
+  <button class="button-secondary-icon" disabled>
+    <img src="icons/icon-star.svg" alt="Sample icon">
+    <span>Disabled</span>
+  </button>
+</div>
+
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="button-secondary-icon mr1">
+  &lt;img src="icon-star.svg" alt="Sample icon">
+  &lt;span>Primary Icon&lt;/span>
+&lt;/button>
+
+&lt;button class="button-secondary-icon mr1" disabled>
+  &lt;img src="icon-star.svg" alt="Sample icon">
+  &lt;span>Disabled&lt;/span>
+&lt;/button>
+</code></pre>
+
+<div class="flex">
   <button class="text-button mr1">Text Button</button>
   <button class="text-button" disabled>Disabled</button>
 </div>
 
-<pre class="my2 p1 bg-black-tint-90"><code>&lt;button class="text-button mr1">Text Button&lt;/button>
+<pre class="mt2 mb3 p1 bg-black-tint-90"><code>&lt;button class="text-button mr1">Text Button&lt;/button>
 &lt;button class="text-button" disabled>Disabled&lt;/button>
 </code></pre>
 </body>
