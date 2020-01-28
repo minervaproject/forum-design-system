@@ -11,7 +11,7 @@ It is also recommended that you use the design system with [Basscss](https://bas
 Add the following to your `package.json`. You can check the [releases](https://github.com/minervaproject/forum-design-system/releases) page for the latest version.
 
 ```
-"forum-design-system": "https://github.com/minervaproject/forum-design-system#v0.0.2",
+"forum-design-system": "https://github.com/minervaproject/forum-design-system#v0.0.3",
 ```
 
 We recommend importing the design system CSS after Basscss but before your custom styles, like this:

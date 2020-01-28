@@ -570,9 +570,26 @@
   padding: 0;
   text-decoration: none;
 }
+.text-button:hover:enabled {
+  text-decoration: underline;
+}
+.text-button:active:enabled {
+  color: var(--blue-shade-40);
+}
 .text-button:disabled {
   color: var(--black-tint-70);
   cursor: not-allowed;
+}
+
+a {
+  color: var(--blue-shade-20);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: var(--blue-shade-40);
 }
 
 /*# sourceMappingURL=forum-design-system.css.map */

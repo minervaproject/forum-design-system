@@ -21,13 +21,14 @@
 </head>
 <body class="m0 px4 py3">
 <h1 class="h1 mt0">
-  <a href="https://github.com/minervaproject/forum-design-system" target="_blank" class="text-decoration-none text-black">Forum Design System</a>
+  <a href="https://github.com/minervaproject/forum-design-system" target="_blank" class="text-black">Forum Design System</a>
 </h1>
 
 <div class="flex">
-  <a href="#typography" class="text-button mr2">Typography</a>
-  <a href="#colors" class="text-button mr2">Colors</a>
-  <a href="#buttons" class="text-button mr2">Buttons</a>
+  <a href="#typography" class="body mr2">Typography</a>
+  <a href="#colors" class="body mr2">Colors</a>
+  <a href="#buttons" class="body mr2">Buttons</a>
+  <a href="#links" class="body mr2">Links</a>
 </div>
 
 <h2 class="h2 mb2" id="typography">Typography</h2>
@@ -61,7 +62,8 @@
 <p class="body">All colors are available through CSS variables. Aside from black and white, there are 10 base colors. Each base color has two shades and two tints. There are six tints of black (i.e., six shades of gray). You can refer to them directly in your CSS like this:</p>
 
 <pre class="mt2 mb3 p1 bg-black-tint-90"><code>.some-custom-class {
-  color: var(--black);
+  background-color: var(--blue-shade-40);
+  color: var(--black-tint-90);
 }
 </code></pre>
 
@@ -281,3 +283,12 @@
 </code></pre>
 </body>
 </html>
+
+<h2 class="h2 mt3 mb2" id="links">Links</h2>
+
+<p class="body">All &lt;a> elements will automatically have these styles applied:</p>
+
+<a href="#links" class="body">I'm a link!</a>
+
+<pre class="my2 p1 bg-black-tint-90"><code>&lt;a href="#links" class="body">I'm a link!&lt;/a>
+</code></pre>
