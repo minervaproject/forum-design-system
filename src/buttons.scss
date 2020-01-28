@@ -15,6 +15,7 @@
 }
 
 @mixin base-button-icon {
+  @include body-s(var(--font-weight-bold));
   @include disabled-button;
   height: 32px;
   width: 300px;
@@ -25,13 +26,9 @@
   text-align: left;
 
   > *:first-child {
-    height: 16px;
+    height: auto;
     width: 16px;
     margin-right: 0.5rem;
-  }
-
-  > *:last-child {
-    @include body-s(var(--font-weight-bold));
   }
 }
 
@@ -107,6 +104,7 @@
   }
 
   &:active:enabled {
+    @include raised-button-shadow;
     background-color: var(--black-tint-90);
   }
 }
