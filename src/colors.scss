@@ -67,14 +67,10 @@ $all-colors: map-merge($all-colors, (
   }
 }
 
-// Background and border colors
+// Background colors
 @each $name, $color in $all-colors {
   .bg-#{$name} {
     background-color: $color;
-  }
-
-  .border-#{$name} {
-    border-color: $color;
   }
 }
 
