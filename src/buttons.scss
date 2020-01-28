@@ -18,7 +18,7 @@
   @include body-s(var(--font-weight-bold));
   @include disabled-button;
   height: 32px;
-  width: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
