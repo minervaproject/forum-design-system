@@ -578,6 +578,10 @@
   cursor: not-allowed;
 }
 
+.button-box-shadow-none:hover:enabled, .button-box-shadow-none:active:enabled {
+  box-shadow: none !important;
+}
+
 a {
   color: var(--blue-shade-20);
   text-decoration: none;

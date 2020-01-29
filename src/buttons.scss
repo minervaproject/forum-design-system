@@ -131,3 +131,9 @@
     cursor: not-allowed;
   }
 }
+
+.button-box-shadow-none {
+  &:hover:enabled, &:active:enabled {
+    box-shadow: none !important;
+  }
+}
