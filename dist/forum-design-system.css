@@ -491,7 +491,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 20px;
   text-align: left;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
@@ -529,7 +529,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 20px;
   text-align: left;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
