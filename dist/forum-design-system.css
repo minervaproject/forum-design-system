@@ -142,6 +142,7 @@
   --black-tint-70: #b3b3b3;
   --black-tint-90: #e6e6e6;
   --black-tint-95: #f2f2f2;
+  --black-tint-97: #f7f7f7;
   --hc-0: #e6e6e6;
   --hc-1: #DF2F26;
   --hc-2: #F0871E;
@@ -382,6 +383,10 @@
   background-color: #f2f2f2;
 }
 
+.bg-black-tint-97 {
+  background-color: #f7f7f7;
+}
+
 .bg-hc-0 {
   background-color: #e6e6e6;
 }
@@ -486,7 +491,7 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: calc(10 / 7);
-  height: 32px;
+  height: 36px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -524,7 +529,7 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: calc(10 / 7);
-  height: 32px;
+  height: 36px;
   width: 100%;
   display: flex;
   align-items: center;

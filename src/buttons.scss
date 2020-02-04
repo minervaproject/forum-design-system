@@ -17,7 +17,7 @@
 @mixin base-button-icon {
   @include body-s(var(--font-weight-bold));
   @include disabled-button;
-  height: 32px;
+  height: 36px;
   width: 100%;
   display: flex;
   align-items: center;
