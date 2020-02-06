@@ -415,6 +415,10 @@
   color: var(--black);
 }
 
+.text-black-tint-20 {
+  color: var(--black-tint-40);
+}
+
 .text-black-tint-40 {
   color: var(--black-tint-40);
 }
