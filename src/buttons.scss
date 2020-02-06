@@ -12,6 +12,10 @@
   @include disabled-button;
   cursor: pointer;
   padding: 5px 28px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @mixin base-button-icon {
@@ -24,6 +28,10 @@
   cursor: pointer;
   padding: 0 0 0 16px;
   text-align: left;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   > *:first-child {
     height: auto;
