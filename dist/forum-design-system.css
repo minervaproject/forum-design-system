@@ -423,6 +423,10 @@
   color: var(--black-tint-40);
 }
 
+.text-black-tint-70 {
+  color: var(--black-tint-70);
+}
+
 .text-white {
   color: var(--white);
 }
@@ -435,6 +439,7 @@
   line-height: 1.5;
   cursor: pointer;
   padding: 5px 28px;
+  transition: all 0.3s ease 0s;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
@@ -466,6 +471,7 @@
   line-height: 1.5;
   cursor: pointer;
   padding: 5px 28px;
+  transition: all 0.3s ease 0s;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
@@ -508,6 +514,7 @@
   cursor: pointer;
   padding: 0 0 0 16px;
   text-align: left;
+  transition: all 0.3s ease 0s;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
@@ -549,6 +556,7 @@
   cursor: pointer;
   padding: 0 0 0 16px;
   text-align: left;
+  transition: all 0.3s ease 0s;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
@@ -587,6 +595,7 @@
   cursor: pointer;
   padding: 0;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 .text-button:hover:enabled {
   text-decoration: underline;

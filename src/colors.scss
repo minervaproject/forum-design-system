@@ -87,6 +87,10 @@ $all-colors: map-merge($all-colors, (
   color: var(--black-tint-40);
 }
 
+.text-black-tint-70 {
+  color: var(--black-tint-70);
+}
+
 .text-white {
   color: var(--white);
 }

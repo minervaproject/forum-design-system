@@ -12,6 +12,7 @@
   @include disabled-button;
   cursor: pointer;
   padding: 5px 28px;
+  transition: all 0.3s ease 0s;
 
   &:hover {
     text-decoration: none;
@@ -28,6 +29,7 @@
   cursor: pointer;
   padding: 0 0 0 16px;
   text-align: left;
+  transition: all 0.3s ease 0s;
 
   &:hover {
     text-decoration: none;
@@ -125,6 +127,7 @@
   cursor: pointer;
   padding: 0;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 
   &:hover:enabled {
     text-decoration: underline;
