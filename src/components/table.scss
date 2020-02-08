@@ -1,0 +1,46 @@
+// Experimental table
+.fds-table-container {
+  table, .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  th:first-child, .th:first-child {
+    padding-left: var(--space-5);
+  }
+
+  th:last-child, .th:last-child {
+    padding-right: var(--space-5);
+  }
+
+  th, .th {
+    @include body-xs;
+    color: var(--black-tint-40);
+    text-align: left;
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+  tbody, .tbody {
+    @include body-s;
+
+    tr:nth-child(2n+1), .tr:nth-child(2n+1) {
+      background-color: var(--black-tint-97);
+    }
+  }
+
+  td, .td {
+    padding: var(--space-2) var(--space-2) var(--space-2) 0;
+    vertical-align: middle;
+  }
+
+  td:first-child, .td:first-child {
+    padding-left: var(--space-5);
+  }
+
+  td:last-child, .td:last-child {
+    padding-right: var(--space-5);
+  }
+}
