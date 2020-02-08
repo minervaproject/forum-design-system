@@ -1088,19 +1088,19 @@ a:active {
   padding-bottom: 40px;
 }
 
-.fds-table-container table, .fds-table-container .table {
+.fds-table {
   border-collapse: collapse;
   border-spacing: 0;
   table-layout: fixed;
   width: 100%;
 }
-.fds-table-container th:first-child, .fds-table-container .th:first-child {
+.fds-table th:first-child, .fds-table .th:first-child {
   padding-left: var(--space-5);
 }
-.fds-table-container th:last-child, .fds-table-container .th:last-child {
+.fds-table th:last-child, .fds-table .th:last-child {
   padding-right: var(--space-5);
 }
-.fds-table-container th, .fds-table-container .th {
+.fds-table th, .fds-table .th {
   font-family: var(--sans-font-family);
   font-size: 0.75rem;
   font-style: normal;
@@ -1111,24 +1111,24 @@ a:active {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
 }
-.fds-table-container tbody, .fds-table-container .tbody {
+.fds-table tbody, .fds-table .tbody {
   font-family: var(--sans-font-family);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   line-height: calc(10 / 7);
 }
-.fds-table-container tbody tr:nth-child(2n+1), .fds-table-container tbody .tr:nth-child(2n+1), .fds-table-container .tbody tr:nth-child(2n+1), .fds-table-container .tbody .tr:nth-child(2n+1) {
+.fds-table tbody tr:nth-child(2n+1), .fds-table tbody .tr:nth-child(2n+1), .fds-table .tbody tr:nth-child(2n+1), .fds-table .tbody .tr:nth-child(2n+1) {
   background-color: var(--black-tint-97);
 }
-.fds-table-container td, .fds-table-container .td {
+.fds-table td, .fds-table .td {
   padding: var(--space-2) var(--space-2) var(--space-2) 0;
   vertical-align: middle;
 }
-.fds-table-container td:first-child, .fds-table-container .td:first-child {
+.fds-table td:first-child, .fds-table .td:first-child {
   padding-left: var(--space-5);
 }
-.fds-table-container td:last-child, .fds-table-container .td:last-child {
+.fds-table td:last-child, .fds-table .td:last-child {
   padding-right: var(--space-5);
 }
 

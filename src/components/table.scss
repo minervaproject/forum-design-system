@@ -1,11 +1,9 @@
 // Experimental table
-.fds-table-container {
-  table, .table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    table-layout: fixed;
-    width: 100%;
-  }
+.fds-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
 
   th:first-child, .th:first-child {
     padding-left: var(--space-5);
