@@ -1,0 +1,74 @@
+// Sizes
+$sizes: (
+        "1": 4px,
+        "2": 8px,
+        "3": 12px,
+        "4": 16px,
+        "5": 20px,
+        "6": 24px,
+        "10": 40px,
+);
+
+// Copy all Sass variables to CSS variables
+:root {
+  @each $name, $size in $sizes {
+    --space-#{$name}: #{$size};
+  }
+}
+
+// Generate helper classes
+@each $name, $size in $sizes {
+  // Margin
+  .m#{$name} {
+    margin: #{$size};
+  }
+  .mt#{$name} {
+    margin-top: #{$size};
+  }
+  .mr#{$name} {
+    margin-right: #{$size};
+  }
+  .mb#{$name} {
+    margin-bottom: #{$size};
+  }
+  .ml#{$name} {
+    margin-left: #{$size};
+  }
+  .mx#{$name} {
+    margin-left: #{$size};
+    margin-right: #{$size};
+  }
+  .my#{$name} {
+    margin-top: #{$size};
+    margin-bottom: #{$size};
+  }
+  .mxn#{$name} {
+    margin-left: calc(#{$size} * -1);
+    margin-right: calc(#{$size} * -1);
+  }
+
+  // Padding
+  .p#{$name} {
+    padding: #{$size};
+  }
+  .pt#{$name} {
+    padding-top: #{$size};
+  }
+  .pr#{$name} {
+    padding-right: #{$size};
+  }
+  .pb#{$name} {
+    padding-bottom: #{$size};
+  }
+  .pl#{$name} {
+    padding-left: #{$size};
+  }
+  .px#{$name} {
+    padding-left: #{$size};
+    padding-right: #{$size};
+  }
+  .py#{$name} {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  }
+}
