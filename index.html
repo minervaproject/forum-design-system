@@ -422,7 +422,7 @@
 &lt;/div>
 </code></pre>
 
-<p>To update the progress bar, adjust the width of the .bar element. Here's an example shown in jQuery:</p>
+<p>To update the progress bar, adjust the width of the bar element. Here's an example shown in jQuery:</p>
 
 <pre class="mt4 mb6 p2 bg-black-tint-90"><code>const $bar = $(".fds-progress-bar .bar");
 let width = 0;
@@ -434,6 +434,35 @@ const interval = setInterval(() => {
   }
   $bar.css({width: `${width}%`});
 }, 100);
+</code></pre>
+
+<h3 class="h3 mt6 mb4">Table</h3>
+
+<table class="fds-table">
+  <thead>
+  <tr>
+    <th>Heading 1</th>
+    <th>Heading 2</th>
+    <th>Heading 3</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Example</td>
+    <td>Example</td>
+    <td>Example</td>
+  </tr>
+  <tr>
+    <td>Example</td>
+    <td>Example</td>
+    <td>Example</td>
+  </tr>
+  </tbody>
+</table>
+
+<p>To use these table styles, add the fds-table class to the &lt;table> element:</p>
+
+<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;table class="fds-table">&lt;/table>
 </code></pre>
 </body>
 </html>
