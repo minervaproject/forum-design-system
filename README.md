@@ -11,13 +11,19 @@ It is also recommended that you use the design system with [Basscss](https://bas
 Add the following to your `package.json`. You can check the [releases](https://github.com/minervaproject/forum-design-system/releases) page for the latest version.
 
 ```
-"forum-design-system": "https://github.com/minervaproject/forum-design-system#v0.0.3",
+"forum-design-system": "https://github.com/minervaproject/forum-design-system#v0.1.0",
 ```
 
 We recommend importing the design system CSS after Basscss but before your custom styles, like this:
 
 ```
 import "forum-design-system/dist/forum-design-system.css";
+```
+
+Alternatively, you can use [jsDelivr](https://www.jsdelivr.com/):
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/minervaproject/forum-design-system@v0.1.0/dist/forum-design-system.css">
 ```
 
 ## Documentation
