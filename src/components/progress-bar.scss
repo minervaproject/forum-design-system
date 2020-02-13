@@ -1,0 +1,43 @@
+$bar-height: 16px;
+$bar-border-radius: 25px;
+$bar-size: 20px;
+
+.fds-progress-bar {
+  background-color: var(--black-tint-95);
+  border-radius: 7px;
+  height: $bar-height;
+
+  .bar {
+    background-color: var(--blue-shade-20);
+    background-image: linear-gradient(180deg, var(--blue-shade-20) 0%, var(--blue-shade-40) 100%);
+    border-radius: $bar-border-radius;
+    display: block;
+    height: $bar-height;
+    overflow: hidden;
+    position: relative;
+
+    > span {
+      content: '';
+      animation: move 2s linear infinite;
+      background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+      background-size: $bar-size $bar-size;
+      border-radius: $bar-border-radius;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: $bar-size $bar-size;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

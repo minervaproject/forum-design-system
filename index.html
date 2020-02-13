@@ -30,6 +30,7 @@
   <a href="#buttons" class="mr4">Buttons</a>
   <a href="#links" class="mr4">Links</a>
   <a href="#spacing" class="mr4">Spacing</a>
+  <a href="#components" class="mr4">Components</a>
 </div>
 
 <h2 class="h2 mb4" id="typography">Typography</h2>
@@ -406,6 +407,33 @@
   margin: var(--space-4) var(--space-6);
   padding: var(--space-2);
 }
+</code></pre>
+
+<h2 class="h2 mt10 mb4" id="components">Components</h2>
+
+<h3 class="h3 mt6 mb4">Progress Bar</h3>
+
+<div class="fds-progress-bar">
+  <span class="bar" style="width: 50%"><span></span></span>
+</div>
+
+<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="fds-progress-bar">
+  &lt;span class="bar" style="width: 50%">&lt;span>&lt;/span>&lt;/span>
+&lt;/div>
+</code></pre>
+
+<p>To update the progress bar, adjust the width of the .bar element. Here's an example shown in jQuery:</p>
+
+<pre class="mt4 mb6 p2 bg-black-tint-90"><code>const $bar = $(".fds-progress-bar .bar");
+let width = 0;
+$bar.css({width: width});
+const interval = setInterval(() => {
+  width += 5;
+  if (width > 100) {
+    clearInterval(interval);
+  }
+  $bar.css({width: `${width}%`});
+}, 100);
 </code></pre>
 </body>
 </html>
