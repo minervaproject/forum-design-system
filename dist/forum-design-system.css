@@ -517,7 +517,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 0 0 16px;
+  padding: 0 16px;
   text-align: left;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
@@ -559,7 +559,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 0 0 16px;
+  padding: 0 16px;
   text-align: left;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
@@ -662,7 +662,7 @@
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: calc(4 / 3);
-  padding-left: 12px;
+  padding: 0 12px;
   text-align: left;
 }
 .button-classroom-primary-icon:hover:enabled {
@@ -695,7 +695,7 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  padding: 0 0 0 12px;
+  padding: 0 12px;
   text-align: left;
   background-color: var(--black-tint-20);
   color: var(--white);

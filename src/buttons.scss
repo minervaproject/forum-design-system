@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 0 0 16px;
+  padding: 0 16px;
   text-align: left;
 
   &:hover {
@@ -193,7 +193,7 @@
   @include base-button-classroom;
   @include button-icon;
   @include body-xs(var(--font-weight-bold));
-  padding-left: 12px;
+  padding: 0 12px;
   text-align: left;
 }
 
@@ -207,7 +207,7 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  padding: 0 0 0 12px;
+  padding: 0 12px;
   text-align: left;
   background-color: var(--black-tint-20);
   color: var(--white);
