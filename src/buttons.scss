@@ -7,34 +7,15 @@
   }
 }
 
-@mixin base-button {
-  @include body(var(--font-weight-bold));
-  @include disabled-button;
-  cursor: pointer;
-  padding: 5px 28px;
+@mixin button-transition {
   transition: all 0.3s ease 0s;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
-@mixin base-button-icon {
-  @include body-s(var(--font-weight-bold));
-  @include disabled-button;
-  height: 36px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0 0 0 16px;
-  text-align: left;
-  transition: all 0.3s ease 0s;
+@mixin raised-button-shadow {
+  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
+}
 
-  &:hover {
-    text-decoration: none;
-  }
-
+@mixin button-icon {
   > *:first-child {
     height: auto;
     width: 16px !important;
@@ -42,8 +23,16 @@
   }
 }
 
-@mixin raised-button-shadow {
-  box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
+@mixin base-button {
+  @include body(var(--font-weight-bold));
+  @include disabled-button;
+  @include button-transition;
+  cursor: pointer;
+  padding: 5px 28px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .button-primary {
@@ -85,6 +74,24 @@
   padding: 5px 16px;
 }
 
+@mixin base-button-icon {
+  @include body-s(var(--font-weight-bold));
+  @include disabled-button;
+  @include button-transition;
+  @include button-icon;
+  height: 36px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0 0 16px;
+  text-align: left;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .button-primary-icon {
   @include base-button-icon;
   background-color: var(--blue-shade-20);
@@ -121,13 +128,13 @@
 
 .text-button {
   @include body;
+  @include button-transition;
   background: none;
   border: none;
   color: var(--blue-shade-20);
   cursor: pointer;
   padding: 0;
   text-decoration: none;
-  transition: all 0.3s ease 0s;
 
   &:hover:enabled {
     text-decoration: underline;
@@ -146,5 +153,77 @@
 .button-box-shadow-none {
   &:hover:enabled, &:active:enabled {
     box-shadow: none !important;
+  }
+}
+
+@mixin base-button-classroom {
+  @include button-transition;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--blue-shade-20);
+  color: var(--white);
+
+  &:hover:enabled {
+    background-color: var(--blue);
+  }
+
+  &:active:enabled {
+    background-color: var(--blue-shade-40);
+  }
+
+  &:disabled {
+    background-color: var(--black-tint-20);
+    color: var(--black-tint-70);
+    cursor: not-allowed;
+  }
+}
+
+.button-classroom-primary {
+  @include base-button-classroom;
+  @include body-s(var(--font-weight-bold));
+  justify-content: center;
+}
+
+.button-classroom-primary-icon {
+  @include base-button-classroom;
+  @include button-icon;
+  @include body-xs(var(--font-weight-bold));
+  padding-left: 12px;
+  text-align: left;
+}
+
+.button-classroom-secondary {
+  @include button-transition;
+  @include button-icon;
+  @include body-s;
+  height: 28px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding: 0 0 0 12px;
+  text-align: left;
+  background-color: var(--black-tint-20);
+  color: var(--white);
+
+  &:hover:enabled {
+    background-color: var(--black-tint-40);
+  }
+
+  &:active:enabled {
+    background-color: var(--black);
+    color: var(--black-tint-70);
+  }
+
+  &:disabled {
+    background-color: var(--black);
+    color: var(--black-tint-40);
+    cursor: not-allowed;
   }
 }
