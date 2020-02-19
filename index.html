@@ -4,6 +4,7 @@
   <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
   <link href="dist/forum-design-system.css" rel="stylesheet">
   <script async defer src="https://use.typekit.net/vuu5fkn.js" onload="try{Typekit.load({ async: true });}catch(e){}"></script>
+  <script src="https://kit.fontawesome.com/a71aa13e6e.js" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -290,6 +291,17 @@
 <pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="text-button mr4">Text Button&lt;/button>
 &lt;button class="text-button" disabled>Disabled&lt;/button>
 </code></pre>
+
+<p>These buttons are used as menu buttons. Icons can be SVGs or fonts. (In the example below, the left button uses an SVG while the right button uses an icon font.)</p>
+
+<div class="bg-black p2 flex">
+  <button class="button-circle mr2">
+    <img src="icons/icon-star.svg" alt="Sample icon">
+  </button>
+  <button class="button-circle">
+    <span class="fas fa-star"></span>
+  </button>
+</div>
 
 <h3 class="h3 mt6 mb4">Helpers</h3>
 

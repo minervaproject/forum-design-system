@@ -150,6 +150,36 @@
   }
 }
 
+.button-circle {
+  @include button-transition;
+  height: 32px;
+  width: 32px;
+  background-color: var(--black);
+  border: 2px solid var(--black-tint-20);
+  border-radius: 50%;
+  color: var(--black-tint-40);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  &:hover:enabled {
+    background-color: var(--black-tint-95);
+    border-color: var(--black-tint-95);
+  }
+
+  &:active:enabled {
+    background-color: var(--black-tint-20);
+    border-color: var(--black-tint-20);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
 .button-box-shadow-none {
   &:hover:enabled, &:active:enabled {
     box-shadow: none !important;
