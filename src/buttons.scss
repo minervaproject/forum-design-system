@@ -184,7 +184,7 @@
   }
 }
 
-@mixin base-button-circle {
+@mixin base-circle-button {
   @include button-transition;
   height: 32px;
   width: 32px;
@@ -201,8 +201,8 @@
   }
 }
 
-.button-circle {
-  @include base-button-circle;
+.circle-button {
+  @include base-circle-button;
   background-color: var(--black);
   border: 2px solid var(--black-tint-20);
   color: var(--black-tint-40);
@@ -218,8 +218,8 @@
   }
 }
 
-.button-circle--light {
-  @include base-button-circle;
+.circle-button--light {
+  @include base-circle-button;
   background-color: transparent;
   border-color: var(--black-tint-40);
   color: var(--black-tint-90);
@@ -235,8 +235,8 @@
   }
 }
 
-.button-circle--red {
-  @include base-button-circle;
+.circle-button--red {
+  @include base-circle-button;
   background-color: var(--red-shade-20);
   border-color: var(--red-shade-20);
   color: var(--white);

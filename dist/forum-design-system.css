@@ -699,7 +699,7 @@
   color: var(--black-tint-40);
 }
 
-.button-circle {
+.circle-button {
   transition: all 0.3s ease 0s;
   height: 32px;
   width: 32px;
@@ -714,19 +714,19 @@
   border: 2px solid var(--black-tint-20);
   color: var(--black-tint-40);
 }
-.button-circle:disabled {
+.circle-button:disabled {
   cursor: not-allowed;
 }
-.button-circle:hover:enabled {
+.circle-button:hover:enabled {
   background-color: var(--black-tint-95);
   border-color: var(--black-tint-95);
 }
-.button-circle:active:enabled {
+.circle-button:active:enabled {
   background-color: var(--black-tint-20);
   border-color: var(--black-tint-20);
 }
 
-.button-circle--light {
+.circle-button--light {
   transition: all 0.3s ease 0s;
   height: 32px;
   width: 32px;
@@ -741,19 +741,19 @@
   border-color: var(--black-tint-40);
   color: var(--black-tint-90);
 }
-.button-circle--light:disabled {
+.circle-button--light:disabled {
   cursor: not-allowed;
 }
-.button-circle--light:hover:enabled {
+.circle-button--light:hover:enabled {
   background-color: var(--black-tint-95);
   border-color: var(--black-tint-95);
 }
-.button-circle--light:active:enabled {
+.circle-button--light:active:enabled {
   background-color: var(--black-tint-20);
   border-color: var(--black-tint-20);
 }
 
-.button-circle--red {
+.circle-button--red {
   transition: all 0.3s ease 0s;
   height: 32px;
   width: 32px;
@@ -768,14 +768,14 @@
   border-color: var(--red-shade-20);
   color: var(--white);
 }
-.button-circle--red:disabled {
+.circle-button--red:disabled {
   cursor: not-allowed;
 }
-.button-circle--red:hover:enabled {
+.circle-button--red:hover:enabled {
   background-color: var(--red);
   border-color: var(--red);
 }
-.button-circle--red:active:enabled {
+.circle-button--red:active:enabled {
   background-color: var(--red-shade-40);
   border-color: var(--red-shade-40);
 }
