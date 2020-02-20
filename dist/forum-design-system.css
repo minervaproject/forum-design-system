@@ -525,7 +525,7 @@
   padding: 5px 16px;
 }
 
-.button-primary-icon {
+.icon-button-primary {
   font-family: var(--sans-font-family);
   font-size: 0.875rem;
   font-style: normal;
@@ -543,31 +543,31 @@
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
 }
-.button-primary-icon:disabled {
+.icon-button-primary:disabled {
   background-color: var(--black-tint-90);
   border-color: var(--black-tint-90);
   color: var(--black-tint-70);
   cursor: not-allowed;
 }
-.button-primary-icon > *:first-child {
+.icon-button-primary > *:first-child {
   height: auto;
   width: 16px !important;
   margin-right: 0.5rem;
 }
-.button-primary-icon:hover {
+.icon-button-primary:hover {
   text-decoration: none;
 }
-.button-primary-icon:hover:enabled {
+.icon-button-primary:hover:enabled {
   box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
   background-color: var(--blue);
   border-color: var(--blue);
 }
-.button-primary-icon:active:enabled {
+.icon-button-primary:active:enabled {
   background-color: var(--blue-shade-40);
   border-color: var(--blue-shade-40);
 }
 
-.button-secondary-icon {
+.icon-button-secondary {
   font-family: var(--sans-font-family);
   font-size: 0.875rem;
   font-style: normal;
@@ -585,24 +585,24 @@
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
 }
-.button-secondary-icon:disabled {
+.icon-button-secondary:disabled {
   background-color: var(--black-tint-90);
   border-color: var(--black-tint-90);
   color: var(--black-tint-70);
   cursor: not-allowed;
 }
-.button-secondary-icon > *:first-child {
+.icon-button-secondary > *:first-child {
   height: auto;
   width: 16px !important;
   margin-right: 0.5rem;
 }
-.button-secondary-icon:hover {
+.icon-button-secondary:hover {
   text-decoration: none;
 }
-.button-secondary-icon:hover:enabled {
+.icon-button-secondary:hover:enabled {
   background-color: var(--black-tint-95);
 }
-.button-secondary-icon:active:enabled {
+.icon-button-secondary:active:enabled {
   box-shadow: 0px 3px 5px var(--black-tint-90), 0px 1px 18px var(--black-tint-95), 0px 6px 10px var(--black-tint-90);
   background-color: var(--black-tint-90);
 }
@@ -814,7 +814,7 @@
   cursor: not-allowed;
 }
 
-.button-classroom-primary-icon {
+.icon-button-classroom-primary {
   transition: all 0.3s ease 0s;
   height: 32px;
   width: 100%;
@@ -833,18 +833,18 @@
   padding: 0 12px;
   text-align: left;
 }
-.button-classroom-primary-icon:hover:enabled {
+.icon-button-classroom-primary:hover:enabled {
   background-color: var(--blue);
 }
-.button-classroom-primary-icon:active:enabled {
+.icon-button-classroom-primary:active:enabled {
   background-color: var(--blue-shade-40);
 }
-.button-classroom-primary-icon:disabled {
+.icon-button-classroom-primary:disabled {
   background-color: var(--black-tint-20);
   color: var(--black-tint-70);
   cursor: not-allowed;
 }
-.button-classroom-primary-icon > *:first-child {
+.icon-button-classroom-primary > *:first-child {
   height: auto;
   width: 16px !important;
   margin-right: 0.5rem;

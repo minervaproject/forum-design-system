@@ -74,7 +74,7 @@
   padding: 5px 16px;
 }
 
-@mixin base-button-icon {
+@mixin base-icon-button {
   @include body-s(var(--font-weight-bold));
   @include disabled-button;
   @include button-transition;
@@ -92,8 +92,8 @@
   }
 }
 
-.button-primary-icon {
-  @include base-button-icon;
+.icon-button-primary {
+  @include base-icon-button;
   background-color: var(--blue-shade-20);
   border: 1px solid var(--blue-shade-20);
   color: var(--white);
@@ -110,8 +110,8 @@
   }
 }
 
-.button-secondary-icon {
-  @include base-button-icon;
+.icon-button-secondary {
+  @include base-icon-button;
   background-color: var(--white);
   border: 1px solid var(--black-tint-40);
   color: var(--black-tint-40);
@@ -291,7 +291,7 @@
   justify-content: center;
 }
 
-.button-classroom-primary-icon {
+.icon-button-classroom-primary {
   @include base-button-classroom;
   @include button-icon;
   @include body-xs(var(--font-weight-bold));
