@@ -703,16 +703,19 @@
   transition: all 0.3s ease 0s;
   height: 32px;
   width: 32px;
-  background-color: var(--black);
-  border: 2px solid var(--black-tint-20);
   border-radius: 50%;
-  color: var(--black-tint-40);
   font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  background-color: var(--black);
+  border: 2px solid var(--black-tint-20);
+  color: var(--black-tint-40);
+}
+.button-circle:disabled {
+  cursor: not-allowed;
 }
 .button-circle:hover:enabled {
   background-color: var(--black-tint-95);
@@ -722,8 +725,59 @@
   background-color: var(--black-tint-20);
   border-color: var(--black-tint-20);
 }
-.button-circle:disabled {
+
+.button-circle--light {
+  transition: all 0.3s ease 0s;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border-color: var(--black-tint-40);
+  color: var(--black-tint-90);
+}
+.button-circle--light:disabled {
   cursor: not-allowed;
+}
+.button-circle--light:hover:enabled {
+  background-color: var(--black-tint-95);
+  border-color: var(--black-tint-95);
+}
+.button-circle--light:active:enabled {
+  background-color: var(--black-tint-20);
+  border-color: var(--black-tint-20);
+}
+
+.button-circle--red {
+  transition: all 0.3s ease 0s;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: var(--red-shade-20);
+  border-color: var(--red-shade-20);
+  color: var(--white);
+}
+.button-circle--red:disabled {
+  cursor: not-allowed;
+}
+.button-circle--red:hover:enabled {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.button-circle--red:active:enabled {
+  background-color: var(--red-shade-40);
+  border-color: var(--red-shade-40);
 }
 
 .button-box-shadow-none:hover:enabled, .button-box-shadow-none:active:enabled {
