@@ -79,6 +79,14 @@
   line-height: calc(4 / 3);
 }
 
+.dashboard-l {
+  font-family: var(--sans-font-family);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+}
+
 .bold {
   font-weight: var(--font-weight-bold);
 }
@@ -600,28 +608,95 @@
 }
 
 .text-button {
+  transition: all 0.3s ease 0s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
   font-family: var(--sans-font-family);
   font-size: 1rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   line-height: 1.5;
-  transition: all 0.3s ease 0s;
-  background: none;
-  border: none;
   color: var(--blue-shade-20);
-  cursor: pointer;
-  padding: 0;
-  text-decoration: none;
 }
 .text-button:hover:enabled {
   text-decoration: underline;
 }
-.text-button:active:enabled {
-  color: var(--blue-shade-40);
-}
 .text-button:disabled {
   color: var(--black-tint-70);
   cursor: not-allowed;
+}
+.text-button:active:enabled {
+  color: var(--blue-shade-40);
+}
+
+.text-button-classroom-primary {
+  transition: all 0.3s ease 0s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--sans-font-family);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(4 / 3);
+  color: var(--blue-tint-90);
+  display: flex;
+  align-items: center;
+}
+.text-button-classroom-primary:hover:enabled {
+  text-decoration: underline;
+}
+.text-button-classroom-primary:disabled {
+  color: var(--black-tint-70);
+  cursor: not-allowed;
+}
+.text-button-classroom-primary > *:first-child {
+  height: auto;
+  width: 16px !important;
+  margin-right: 0.5rem;
+}
+.text-button-classroom-primary:active:enabled {
+  color: var(--white);
+}
+
+.text-button-classroom-secondary {
+  transition: all 0.3s ease 0s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--sans-font-family);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(4 / 3);
+  color: var(--black-tint-70);
+  display: flex;
+  align-items: center;
+}
+.text-button-classroom-secondary:hover:enabled {
+  text-decoration: underline;
+}
+.text-button-classroom-secondary:disabled {
+  color: var(--black-tint-70);
+  cursor: not-allowed;
+}
+.text-button-classroom-secondary > *:first-child {
+  height: auto;
+  width: 16px !important;
+  margin-right: 0.5rem;
+}
+.text-button-classroom-secondary:active:enabled {
+  color: var(--white);
+}
+.text-button-classroom-secondary:disabled {
+  color: var(--black-tint-40);
 }
 
 .button-circle {

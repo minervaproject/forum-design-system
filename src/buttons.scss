@@ -126,12 +126,10 @@
   }
 }
 
-.text-button {
-  @include body;
+@mixin base-text-button {
   @include button-transition;
   background: none;
   border: none;
-  color: var(--blue-shade-20);
   cursor: pointer;
   padding: 0;
   text-decoration: none;
@@ -140,13 +138,49 @@
     text-decoration: underline;
   }
 
-  &:active:enabled {
-    color: var(--blue-shade-40);
-  }
-
   &:disabled {
     color: var(--black-tint-70);
     cursor: not-allowed;
+  }
+}
+
+.text-button {
+  @include base-text-button;
+  @include body;
+  color: var(--blue-shade-20);
+
+  &:active:enabled {
+    color: var(--blue-shade-40);
+  }
+}
+
+.text-button-classroom-primary {
+  @include base-text-button;
+  @include body-xs(var(--font-weight-bold));
+  @include button-icon;
+  color: var(--blue-tint-90);
+  display: flex;
+  align-items: center;
+
+  &:active:enabled {
+    color: var(--white);
+  }
+}
+
+.text-button-classroom-secondary {
+  @include base-text-button;
+  @include body-xs(var(--font-weight-bold));
+  @include button-icon;
+  color: var(--black-tint-70);
+  display: flex;
+  align-items: center;
+
+  &:active:enabled {
+    color: var(--white);
+  }
+
+  &:disabled {
+    color: var(--black-tint-40);
   }
 }
 

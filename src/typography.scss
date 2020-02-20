@@ -113,6 +113,14 @@
   @include body-xs;
 }
 
+.dashboard-l {
+  font-family: var(--sans-font-family);
+  font-size: 3rem; // 48px
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1 // 48px
+}
+
 .bold {
   font-weight: var(--font-weight-bold);
 }
