@@ -456,27 +456,27 @@
 }
 
 .text-hc-0 {
-  color: var(--hc-0);
+  color: var(--hc-0) !important;
 }
 
 .text-hc-1 {
-  color: var(--hc-1);
+  color: var(--hc-1) !important;
 }
 
 .text-hc-2 {
-  color: var(--hc-2);
+  color: var(--hc-2) !important;
 }
 
 .text-hc-3 {
-  color: var(--hc-3);
+  color: var(--hc-3) !important;
 }
 
 .text-hc-4 {
-  color: var(--hc-4);
+  color: var(--hc-4) !important;
 }
 
 .text-hc-5 {
-  color: var(--hc-5);
+  color: var(--hc-5) !important;
 }
 
 .button-primary {
