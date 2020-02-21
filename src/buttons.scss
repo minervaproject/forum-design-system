@@ -227,11 +227,13 @@
   &:hover:enabled {
     background-color: var(--black-tint-95);
     border-color: var(--black-tint-95);
+    color: var(--black-tint-40);
   }
 
   &:active:enabled {
     background-color: var(--black-tint-20);
     border-color: var(--black-tint-20);
+    color: var(--black-tint-40);
   }
 }
 
