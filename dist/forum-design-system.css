@@ -738,6 +738,10 @@
   border: 2px solid var(--black-tint-20);
   color: var(--black-tint-40);
 }
+.circle-button > *:first-child {
+  height: 16px !important;
+  width: 16px !important;
+}
 .circle-button:disabled {
   cursor: not-allowed;
 }
@@ -765,18 +769,31 @@
   border-color: var(--black-tint-40);
   color: var(--black-tint-90);
 }
+.circle-button--light > *:first-child {
+  height: 16px !important;
+  width: 16px !important;
+}
 .circle-button--light:disabled {
   cursor: not-allowed;
+}
+.circle-button--light > *:first-child {
+  filter: brightness(100);
 }
 .circle-button--light:hover:enabled {
   background-color: var(--black-tint-95);
   border-color: var(--black-tint-95);
   color: var(--black-tint-40);
 }
+.circle-button--light:hover:enabled > *:first-child {
+  filter: none;
+}
 .circle-button--light:active:enabled {
   background-color: var(--black-tint-20);
   border-color: var(--black-tint-20);
   color: var(--black-tint-40);
+}
+.circle-button--light:active:enabled > *:first-child {
+  filter: none;
 }
 
 .circle-button--red {
@@ -794,8 +811,15 @@
   border-color: var(--red-shade-20);
   color: var(--white);
 }
+.circle-button--red > *:first-child {
+  height: 16px !important;
+  width: 16px !important;
+}
 .circle-button--red:disabled {
   cursor: not-allowed;
+}
+.circle-button--red > *:first-child {
+  filter: brightness(100);
 }
 .circle-button--red:hover:enabled {
   background-color: var(--red);
