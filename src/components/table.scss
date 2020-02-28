@@ -26,10 +26,6 @@
     tr:nth-child(2n+1), .tr:nth-child(2n+1) {
       background-color: var(--black-tint-97);
     }
-
-    tr:hover, .tr:hover {
-      background-color: var(--black-tint-90);
-    }
   }
 
   td, .td {
@@ -43,5 +39,14 @@
 
   td:last-child, .td:last-child {
     padding-right: var(--space-5);
+  }
+}
+
+.table-hover {
+  tbody, .tbody {
+    tr:hover, .tr:hover {
+      background-color: var(--black-tint-90);
+      cursor: pointer;
+    }
   }
 }

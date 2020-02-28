@@ -1482,9 +1482,6 @@ a:active {
 .fds-table tbody tr:nth-child(2n+1), .fds-table tbody .tr:nth-child(2n+1), .fds-table .tbody tr:nth-child(2n+1), .fds-table .tbody .tr:nth-child(2n+1) {
   background-color: var(--black-tint-97);
 }
-.fds-table tbody tr:hover, .fds-table tbody .tr:hover, .fds-table .tbody tr:hover, .fds-table .tbody .tr:hover {
-  background-color: var(--black-tint-90);
-}
 .fds-table td, .fds-table .td {
   padding: var(--space-2) var(--space-2) var(--space-2) 0;
   vertical-align: middle;
@@ -1494,6 +1491,11 @@ a:active {
 }
 .fds-table td:last-child, .fds-table .td:last-child {
   padding-right: var(--space-5);
+}
+
+.table-hover tbody tr:hover, .table-hover tbody .tr:hover, .table-hover .tbody tr:hover, .table-hover .tbody .tr:hover {
+  background-color: var(--black-tint-90);
+  cursor: pointer;
 }
 
 .fds-tabs {
