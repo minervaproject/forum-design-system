@@ -1525,4 +1525,39 @@ a:active {
   border-color: var(--blue);
 }
 
+.radio-button-large {
+  height: 16px;
+  width: 16px;
+  border: 1px solid var(--black-tint-70);
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: none;
+  margin-right: 12px;
+}
+.radio-button-large:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.radio-button-large--selected {
+  border: 4px solid var(--blue);
+}
+
+.radio-button-small {
+  height: 12px;
+  width: 12px;
+  border: 1px solid var(--black-tint-70);
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.radio-button-small:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.radio-button-small--selected {
+  border: 3px solid var(--blue);
+}
+
 /*# sourceMappingURL=forum-design-system.css.map */
