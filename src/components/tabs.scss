@@ -1,4 +1,4 @@
-.fds-tabs {
+@mixin base-tabs {
   display: flex;
 
   .tab {
@@ -14,7 +14,13 @@
     &:hover {
       border-color: var(--black-tint-70);
     }
+  }
+}
 
+.fds-tabs {
+  @include base-tabs;
+
+  .tab {
     &:active {
       color: var(--black-tint-40);
       border-color: var(--black-tint-40);
@@ -22,6 +28,22 @@
 
     &--active {
       color: var(--black-tint-20);
+      border-color: var(--blue);
+    }
+  }
+}
+
+.fds-tabs--dark {
+  @include base-tabs;
+
+  .tab {
+    &:active {
+      color: var(--black-tint-90);
+      border-color: var(--black-tint-90);
+    }
+
+    &--active {
+      color: var(--white);
       border-color: var(--blue);
     }
   }

@@ -1525,4 +1525,33 @@ a:active {
   border-color: var(--blue);
 }
 
+.fds-tabs--dark {
+  display: flex;
+}
+.fds-tabs--dark .tab {
+  font-family: var(--sans-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(10 / 7);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--black-tint-70);
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 0 0 2px 0;
+}
+.fds-tabs--dark .tab:hover {
+  border-color: var(--black-tint-70);
+}
+.fds-tabs--dark .tab:active {
+  color: var(--black-tint-90);
+  border-color: var(--black-tint-90);
+}
+.fds-tabs--dark .tab--active {
+  color: var(--white);
+  border-color: var(--blue);
+}
+
 /*# sourceMappingURL=forum-design-system.css.map */
