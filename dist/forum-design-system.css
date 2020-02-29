@@ -1495,7 +1495,6 @@ a:active {
 
 .table-hover tbody tr:hover, .table-hover tbody .tr:hover, .table-hover .tbody tr:hover, .table-hover .tbody .tr:hover {
   background-color: var(--black-tint-90);
-  cursor: pointer;
 }
 
 .fds-tabs {
@@ -1513,6 +1512,7 @@ a:active {
   cursor: pointer;
   margin-right: 16px;
   padding: 0 0 2px 0;
+  transition: all 0.3s ease 0s;
 }
 .fds-tabs .tab {
   color: var(--black-tint-70);
@@ -1544,6 +1544,7 @@ a:active {
   cursor: pointer;
   margin-right: 16px;
   padding: 0 0 2px 0;
+  transition: all 0.3s ease 0s;
 }
 .fds-tabs--dark .tab {
   color: var(--black-tint-70);
@@ -1575,6 +1576,7 @@ a:active {
   cursor: pointer;
   margin-right: 16px;
   padding: 0 0 2px 0;
+  transition: all 0.3s ease 0s;
 }
 .fds-tabs--gray .tab {
   color: var(--black-tint-40);
