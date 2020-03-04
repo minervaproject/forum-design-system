@@ -149,6 +149,10 @@
   @include body;
   color: var(--blue-shade-20);
 
+  &:hover:enabled {
+    color: var(--blue);
+  }
+
   &:active:enabled {
     color: var(--blue-shade-40);
   }

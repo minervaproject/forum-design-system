@@ -652,6 +652,9 @@
   color: var(--black-tint-70);
   cursor: not-allowed;
 }
+.text-button:hover:enabled {
+  color: var(--blue);
+}
 .text-button:active:enabled {
   color: var(--blue-shade-40);
 }
@@ -941,6 +944,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  color: var(--blue);
   text-decoration: underline;
 }
 a:active {
