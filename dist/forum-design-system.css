@@ -951,6 +951,17 @@ a:active {
   color: var(--blue-shade-40);
 }
 
+a.underlined-link {
+  color: var(--blue-shade-20);
+  text-decoration: underline;
+}
+a.underlined-link:hover {
+  color: var(--blue);
+}
+a.underlined-link:active {
+  color: var(--blue-shade-40);
+}
+
 :root {
   --space-1: 4px;
   --space-2: 8px;

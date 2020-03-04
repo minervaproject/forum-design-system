@@ -12,3 +12,16 @@ a {
     color: var(--blue-shade-40);
   }
 }
+
+a.underlined-link {
+  color: var(--blue-shade-20);
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--blue);
+  }
+
+  &:active {
+    color: var(--blue-shade-40);
+  }
+}
