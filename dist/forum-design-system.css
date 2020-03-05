@@ -951,14 +951,14 @@ a:active {
   color: var(--blue-shade-40);
 }
 
-a.underlined-link {
+a.underlined-link, .underlined-links a {
   color: var(--blue-shade-20);
   text-decoration: underline;
 }
-a.underlined-link:hover {
+a.underlined-link:hover, .underlined-links a:hover {
   color: var(--blue);
 }
-a.underlined-link:active {
+a.underlined-link:active, .underlined-links a:active {
   color: var(--blue-shade-40);
 }
 

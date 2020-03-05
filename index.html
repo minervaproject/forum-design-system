@@ -467,6 +467,17 @@
 <pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;a href="#links" class="underlined-link">I'm a link!&lt;/a>
 </code></pre>
 
+<p>In some situations, you can't apply the class to the link itself (for example, when the HTML is generated from Markdown). In such cases, you can apply the following helper class on a parent element instead:</p>
+
+<div class="underlined-links">
+  <a href="#links">I'm a link!</a>
+</div>
+
+<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="underlined-links">
+  &lt;a href="#links">I'm a link!&lt;/a>
+&lt;/div>
+</code></pre>
+
 <h2 class="h2 mt10 mb4" id="spacing">Spacing</h2>
 
 <p>All spacing is based on a 4px grid system. Note that we override the default sizes provided by Basscss.</p>
