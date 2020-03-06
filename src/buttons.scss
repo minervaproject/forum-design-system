@@ -356,3 +356,28 @@
     cursor: not-allowed;
   }
 }
+
+.button-grading-primary {
+  @include base-button;
+  @include body-s(var(--font-weight-bold));
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  color: var(--white);
+  padding: 5px 16px;
+
+  &:hover:enabled {
+    background-color: var(--black-tint-10);
+    border-color: var(--black-tint-10);
+  }
+
+  &:active:enabled {
+    color: var(--black-tint-70);
+  }
+
+  &:disabled {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    color: var(--black-tint-40);
+    cursor: not-allowed;
+  }
+}
