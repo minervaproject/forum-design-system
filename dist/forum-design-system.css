@@ -1011,6 +1011,7 @@ a.underlined-link:active, .underlined-links a:active {
   --space-4: 16px;
   --space-5: 20px;
   --space-6: 24px;
+  --space-7: 28px;
   --space-10: 40px;
 }
 
@@ -1402,6 +1403,71 @@ a.underlined-link:active, .underlined-links a:active {
 .py6 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.m7 {
+  margin: 28px;
+}
+
+.mt7 {
+  margin-top: 28px;
+}
+
+.mr7 {
+  margin-right: 28px;
+}
+
+.mb7 {
+  margin-bottom: 28px;
+}
+
+.ml7 {
+  margin-left: 28px;
+}
+
+.mx7 {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.my7 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.mxn7 {
+  margin-left: calc(28px * -1);
+  margin-right: calc(28px * -1);
+}
+
+.p7 {
+  padding: 28px;
+}
+
+.pt7 {
+  padding-top: 28px;
+}
+
+.pr7 {
+  padding-right: 28px;
+}
+
+.pb7 {
+  padding-bottom: 28px;
+}
+
+.pl7 {
+  padding-left: 28px;
+}
+
+.px7 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.py7 {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .m10 {
