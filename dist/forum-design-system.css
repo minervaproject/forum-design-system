@@ -702,7 +702,6 @@
   font-style: normal;
   font-weight: var(--font-weight-normal);
   line-height: calc(4 / 3);
-  font-size: 0.75rem;
   height: 32px;
   width: 32px; }
   .avatar-medium:after {
@@ -729,7 +728,6 @@
   font-style: normal;
   font-weight: var(--font-weight-normal);
   line-height: calc(4 / 3);
-  font-size: 0.75rem;
   height: 24px;
   width: 24px; }
   .avatar-small:after {

@@ -33,7 +33,6 @@
 .avatar-medium {
   @include avatar-base;
   @include body-xs;
-  font-size: 0.75rem;
   height: 32px;
   width: 32px;
 }
@@ -41,7 +40,6 @@
 .avatar-small {
   @include avatar-base;
   @include body-xs;
-  font-size: 0.75rem;
   height: 24px;
   width: 24px;
 }
