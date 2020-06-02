@@ -1,0 +1,7 @@
+// Faux-outline using box-shadow as normal CSS outline doesn't respect border-radius.
+
+@each $name, $color in $all-colors {
+  .outline-2-#{$name} {
+    box-shadow: 0 0 0 2px $color;
+  }
+}

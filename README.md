@@ -36,9 +36,10 @@ For local development, you'll need to run the following:
 
 ```
 nvm use
-npm install -g sass
+yarn
+yarn start
 ```
 
-After making changes, run `npm run build` to update `dist/forum-design-system.css`.
+After making changes, run `yarn build` to update `dist/forum-design-system.css`.
 
 Note: if you add or change styles, make sure you update the documentation in `index.html`.
