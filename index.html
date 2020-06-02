@@ -11,6 +11,16 @@
       max-width: 800px;
     }
 
+    .demo {
+      background: var(--black-tint-90);
+    }
+    .demo::after {
+      content: attr(data-code);
+      display: inline-block;
+      margin-top: -1rem;
+      padding: 0.5rem;
+    }
+
     .swatch {
       width: 200px;
       height: 30px;
@@ -43,11 +53,12 @@
 <div class="h3">h3</div>
 <div class="h4">h4</div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="h1">h1&lt;/div>
-&lt;div class="h2">h2&lt;/div>
-&lt;div class="h3">h3&lt;/div>
-&lt;div class="h4">h4&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="h1">h1</div>
+<div class="h2">h2</div>
+<div class="h3">h3</div>
+<div class="h4">h4</div>
+'></pre>
 
 <div class="body-l">body-l</div>
 <div class="body">body</div>
@@ -55,27 +66,30 @@
 <div class="body-xs">body-xs</div>
 <div class="body bold">bold</div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="body-l">body-l&lt;/div>
-&lt;div class="body">body&lt;/div>
-&lt;div class="body-s">body-s&lt;/div>
-&lt;div class="body-xs">body-xs&lt;/div>
-&lt;div class="body bold">bold&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="body-l">body-l</div>
+<div class="body">body</div>
+<div class="body-s">body-s</div>
+<div class="body-xs">body-xs</div>
+<div class="body bold">bold</div>
+'></pre>
 
 <div class="dashboard-l">dashboard-l</div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="dashboard-l">dashboard-l&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="dashboard-l">dashboard-l</div>
+'></pre>
 
 <h2 class="h2 mt10 mb4" id="colors">Colors</h2>
 
 <p>All colors are available through CSS variables. Aside from black and white, there are 10 base colors. Each base color has two shades and two tints. There are seven tints of black (i.e., seven shades of gray). You can refer to them directly in your CSS like this:</p>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>.some-custom-class {
+<pre class="demo" data-code='
+.some-custom-class {
   background-color: var(--blue-shade-40);
   color: var(--black-tint-90);
 }
-</code></pre>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Background Colors</h3>
 
@@ -235,6 +249,13 @@
   <div class="outline-2-violet" style="border-radius: 4px">border-radius</div>
 </div>
 
+<pre class="demo" data-code='
+<div class="outline-2-red">div</div>
+<span class="outline-2-blue">span</span>
+<div class="outline-2-green" style="border: 1px solid black">border</div>
+<div class="outline-2-violet" style="border-radius: 4px">border-radius</div>
+'></pre>
+
 <h2 class="h2 mt10 mb4" id="avatars">Avatars</h2>
 
 <h3 class="h3 mb4">Basic Example</h3>
@@ -245,6 +266,12 @@
   <img class="avatar-small" src="https://place-hold.it/24x24&fontsize=5" />
 </div>
 
+<pre class="demo" data-code='
+<img class="avatar-large" src="https://place-hold.it/48x48&fontsize=9" />
+<img class="avatar-medium" src="https://place-hold.it/32x32&fontsize=7" />
+<img class="avatar-small" src="https://place-hold.it/24x24&fontsize=5" />
+'></pre>
+
 <h3 class="h3 mb4">Initials Placeholder</h3>
 
 <div class="flex">
@@ -253,6 +280,12 @@
   <img alt="EF" class="avatar-small" src="404" />
 </div>
 
+<pre class="demo" data-code='
+<img alt="AB" class="avatar-large" src="404" />
+<img alt="CD" class="avatar-medium" src="404" />
+<img alt="EF" class="avatar-small" src="404" />
+'></pre>
+
 <h3 class="h3 mb4">Object Fit</h3>
 
 <div class="flex">
@@ -260,6 +293,12 @@
   <img class="avatar-large" src="https://place-hold.it/60x60&fontsize=9" />
   <img class="avatar-large" src="https://place-hold.it/48x100&fontsize=9" />
 </div>
+
+<pre class="demo" data-code='
+<img class="avatar-large" src="https://place-hold.it/32x32&fontsize=9" />
+<img class="avatar-large" src="https://place-hold.it/60x60&fontsize=9" />
+<img class="avatar-large" src="https://place-hold.it/48x100&fontsize=9" />
+'></pre>
 
 <h3 class="h3 mb4">Overlapping (w/ Outline classes)</h3>
 
@@ -290,6 +329,35 @@
   <img alt="KL" class="avatar-small outline-2-white" />
 </div>
 
+<pre class="demo" data-code='
+<div class="avatar-overlap">
+  <img alt="AB" class="avatar-large outline-2-white" />
+  <img alt="CD" class="avatar-large outline-2-white" />
+  <img alt="EF" class="avatar-large outline-2-white" />
+  <img alt="GH" class="avatar-large outline-2-white" />
+  <img alt="IJ" class="avatar-large outline-2-white" />
+  <img alt="KL" class="avatar-large outline-2-white" />
+</div>
+
+<div class="avatar-overlap">
+  <img alt="AB" class="avatar-medium outline-2-white" />
+  <img alt="CD" class="avatar-medium outline-2-white" />
+  <img alt="EF" class="avatar-medium outline-2-white" />
+  <img alt="GH" class="avatar-medium outline-2-white" />
+  <img alt="IJ" class="avatar-medium outline-2-white" />
+  <img alt="KL" class="avatar-medium outline-2-white" />
+</div>
+
+<div class="avatar-overlap">
+  <img alt="AB" class="avatar-small outline-2-white" />
+  <img alt="CD" class="avatar-small outline-2-white" />
+  <img alt="EF" class="avatar-small outline-2-white" />
+  <img alt="GH" class="avatar-small outline-2-white" />
+  <img alt="IJ" class="avatar-small outline-2-white" />
+  <img alt="KL" class="avatar-small outline-2-white" />
+</div>
+'></pre>
+
 <h2 class="h2 mt10 mb4" id="buttons">Buttons</h2>
 
 <h3 class="h3 mb4">Main Buttons</h3>
@@ -299,18 +367,20 @@
   <button class="button-primary" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-primary mr4">Primary&lt;/button>
-&lt;button class="button-primary" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-primary mr4">Primary</button>
+<button class="button-primary" disabled>Disabled</button>
+'></pre>
 
 <div class="flex">
   <button class="button-secondary mr4">Secondary</button>
   <button class="button-secondary" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-secondary mr4">Secondary&lt;/button>
-&lt;button class="button-secondary" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-secondary mr4">Secondary</button>
+<button class="button-secondary" disabled>Disabled</button>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Other Buttons</h3>
 
@@ -319,9 +389,10 @@
   <button class="button-secondary-small" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-secondary-small mr4">Secondary Small&lt;/button>
-&lt;button class="button-secondary-small" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-secondary-small mr4">Secondary Small</button>
+<button class="button-secondary-small" disabled>Disabled</button>
+'></pre>
 
 <div class="flex" style="width: 568px">
   <button class="icon-button-primary mr4">
@@ -334,16 +405,16 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="icon-button-primary mr4">
-  &lt;img src="icon-star-white.svg" alt="Sample icon">
-  &lt;span>Primary Icon&lt;/span>
-&lt;/button>
-
-&lt;button class="icon-button-primary" disabled>
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Disabled&lt;/span>
-&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="icon-button-primary mr4">
+  <img src="icons/icon-star-white.svg" alt="Sample icon">
+  <span>Primary Icon</span>
+</button>
+<button class="icon-button-primary" disabled>
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Disabled</span>
+</button>
+'></pre>
 
 <div class="flex" style="width: 568px">
   <button class="icon-button-secondary mr4">
@@ -356,25 +427,26 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="icon-button-secondary mr4">
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Primary Icon&lt;/span>
-&lt;/button>
-
-&lt;button class="icon-button-secondary" disabled>
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Disabled&lt;/span>
-&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="icon-button-secondary mr4">
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Secondary Icon</span>
+</button>
+<button class="icon-button-secondary" disabled>
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Disabled</span>
+</button>
+'></pre>
 
 <div class="flex">
   <button class="text-button mr4">Text Button</button>
   <button class="text-button" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="text-button mr4">Text Button&lt;/button>
-&lt;button class="text-button" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="text-button mr4">Text Button</button>
+<button class="text-button" disabled>Disabled</button>
+'></pre>
 
 <p>These buttons are used as menu buttons. Icons can be SVGs or fonts. (In the example below, the first button uses an SVG while the second button uses an icon font.) There are also two color variations, light and red.</p>
 
@@ -393,22 +465,23 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="circle-button mr2">
-  &lt;img src="icon-star.svg" alt="Sample icon">
-&lt;/button>
+<pre class="demo" data-code='
+<button class="circle-button mr2">
+  <img src="icons/icon-star.svg" alt="Sample icon">
+</button>
 
-&lt;button class="circle-button">
-  &lt;span class="fas fa-star">&lt;/span>
-&lt;/button>
+<button class="circle-button mr2">
+  <span class="fas fa-star"></span>
+</button>
 
-&lt;button class="circle-button--light mr2">
-  &lt;img src="icon-star.svg" alt="Sample icon">
-&lt;/button>
+<button class="circle-button--light mr2">
+  <img src="icons/icon-star.svg" alt="Sample icon">
+</button>
 
-&lt;button class="circle-button--red">
-  &lt;img src="icon-star.svg" alt="Sample icon">
-&lt;/button>
-</code></pre>
+<button class="circle-button--red">
+  <img src="icons/icon-star.svg" alt="Sample icon">
+</button>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Helpers</h3>
 
@@ -418,8 +491,9 @@
   <button class="button-primary button-box-shadow-none">Primary</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-primary button-box-shadow-none">Primary&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-primary button-box-shadow-none">Primary</button>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Classroom Buttons</h3>
 
@@ -430,9 +504,10 @@
   <button class="button-classroom-primary" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-classroom-primary mr2">Primary&lt;/button>
-&lt;button class="button-classroom-primary" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-classroom-primary mr2">Primary</button>
+<button class="button-classroom-primary" disabled>Disabled</button>
+'></pre>
 
 <div class="bg-black-tint-10 flex p2" style="width: 592px">
   <button class="icon-button-classroom-primary mr2">
@@ -445,16 +520,17 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="icon-button-classroom-primary mr2">
-  &lt;img src="icon-star-white.svg" alt="Sample icon">
-  &lt;span>Primary Icon&lt;/span>
-&lt;/button>
+<pre class="demo" data-code='
+<button class="icon-button-classroom-primary mr2">
+  <img src="icons/icon-star-white.svg" alt="Sample icon">
+  <span>Primary Icon</span>
+</button>
 
-&lt;button class="icon-button-classroom-primary" disabled>
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Disabled&lt;/span>
-&lt;/button>
-</code></pre>
+<button class="icon-button-classroom-primary" disabled>
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Disabled</span>
+</button>
+'></pre>
 
 <div class="bg-black-tint-10 p2" style="width: 592px">
   <div class="flex mb2">
@@ -477,19 +553,23 @@
   </div>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-classroom-secondary mr2">
-  &lt;img src="icon-star-white.svg" alt="Sample icon">
-  &lt;span>Secondary&lt;/span>
-&lt;/button>
+<pre class="demo" data-code='
+<button class="button-classroom-secondary mr2">
+  <img src="icons/icon-star-white.svg" alt="Sample icon">
+  <span>Secondary</span>
+</button>
+<button class="button-classroom-secondary" disabled>
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Disabled</span>
+</button>
 
-&lt;button class="button-classroom-secondary" disabled>
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Disabled&lt;/span>
-&lt;/button>
-
-&lt;button class="button-classroom-secondary mr2">Secondary&lt;/button>
-&lt;button class="button-classroom-secondary" disabled>Disabled&lt;/button>
-</code></pre>
+<button class="button-classroom-secondary mr2">
+  Secondary
+</button>
+<button class="button-classroom-secondary" disabled>
+  Disabled
+</button>
+'></pre>
 
 <p>These are the classroom versions of text buttons (buttons that look like links). Note that in the examples below, the background is not part of the button.</p>
 
@@ -500,11 +580,12 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="text-button-classroom-primary">
-  &lt;img src="icon-star-white.svg" alt="Sample icon">
-  &lt;span>Primary&lt;/span>
-&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="text-button-classroom-primary">
+  <img src="icons/icon-star-white.svg" alt="Sample icon">
+  <span>Primary</span>
+</button>
+'></pre>
 
 <div class="bg-black-tint-20 p2 flex">
   <button class="text-button-classroom-secondary">
@@ -513,11 +594,12 @@
   </button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="text-button-classroom-secondary">
-  &lt;img src="icon-star.svg" alt="Sample icon">
-  &lt;span>Secondary&lt;/span>
-&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="text-button-classroom-secondary">
+  <img src="icons/icon-star.svg" alt="Sample icon">
+  <span>Secondary</span>
+</button>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Grading Buttons</h3>
 
@@ -526,36 +608,42 @@
   <button class="button-grading-primary" disabled>Disabled</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;button class="button-grading-primary mr4">Primary&lt;/button>
-&lt;button class="button-grading-primary" disabled>Disabled&lt;/button>
-</code></pre>
+<pre class="demo" data-code='
+<button class="button-grading-primary mr4">Primary</button>
+<button class="button-grading-primary" disabled>Disabled</button>
+'></pre>
 
 <h2 class="h2 mt10 mb4" id="links">Links</h2>
 
 <p>All &lt;a> elements will automatically have these styles applied:</p>
 
-<a href="#links">I'm a link!</a>
+<a href="#links">I am a link!</a>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;a href="#links">I'm a link!&lt;/a>
-</code></pre>
+<pre class="demo" data-code='
+<a href="#links">I am a link!</a>
+'></pre>
 
 <p>Certain links, such as HCs and links within blocks of text, should always be underlined.</p>
 
-<a href="#links" class="underlined-link">I'm a link!</a>
+<a href="#links" class="underlined-link">I am a link!</a>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;a href="#links" class="underlined-link">I'm a link!&lt;/a>
-</code></pre>
+<pre class="demo" data-code='
+<a href="#links" class="underlined-link">I am a link!</a>
+'></pre>
 
 <p>In some situations, you can't apply the class to the link itself (for example, when the HTML is generated from Markdown). In such cases, you can apply the following helper class on a parent element instead:</p>
 
 <div class="underlined-links">
-  <a href="#links">I'm a link!</a>
+  <a href="#links">I am a link!</a>
+  <a href="#links">I am also a link!</a>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="underlined-links">
-  &lt;a href="#links">I'm a link!&lt;/a>
-&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="underlined-links">
+  <a href="#links">I am a link!</a>
+  <a href="#links">I am also a link!</a>
+</div>
+'></pre>
 
 <h2 class="h2 mt10 mb4" id="spacing">Spacing</h2>
 
@@ -651,17 +739,19 @@
 <div class="bg-black-tint-10 text-white p2 mb4">p2 mb4</div>
 <div class="bg-black-tint-40 text-white px3 py6">px3 py6</div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="bg-black-tint-10 text-white p2 mb4">p2 mb4&lt;/div>
-&lt;div class="bg-black-tint-40 text-white px3 py6">px3 py6&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="bg-black-tint-10 text-white p2 mb4">p2 mb4</div>
+<div class="bg-black-tint-40 text-white px3 py6">px3 py6</div>
+'></pre>
 
 <p>Alternatively, you can use CSS variables to set margin and padding in your custom CSS:</p>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>.some-custom-class {
+<pre class="demo" data-code='
+.some-custom-class {
   margin: var(--space-4) var(--space-6);
   padding: var(--space-2);
 }
-</code></pre>
+'></pre>
 
 <h2 class="h2 mt10 mb4" id="components">Components</h2>
 
@@ -671,14 +761,16 @@
   <span class="bar" style="width: 50%"><span></span></span>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="fds-progress-bar">
-  &lt;span class="bar" style="width: 50%">&lt;span>&lt;/span>&lt;/span>
-&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="fds-progress-bar">
+  <span class="bar" style="width: 50%"><span></span></span>
+</div>
+'></pre>
 
 <p>To update the progress bar, adjust the width of the bar element. Here's an example shown in jQuery:</p>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>const $bar = $(".fds-progress-bar .bar");
+<pre class="demo" data-code='
+const $bar = $(".fds-progress-bar .bar");
 let width = 0;
 $bar.css({width: width});
 const interval = setInterval(() => {
@@ -688,7 +780,7 @@ const interval = setInterval(() => {
   }
   $bar.css({width: `${width}%`});
 }, 100);
-</code></pre>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Table</h3>
 
@@ -716,8 +808,9 @@ const interval = setInterval(() => {
 
 <p>To use these table styles, add the fds-table class to the &lt;table> element:</p>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;table class="fds-table">&lt;/table>
-</code></pre>
+<pre class="demo" data-code='
+<table class="fds-table"></table>
+'></pre>
 
 <table class="fds-table table-hover">
   <thead>
@@ -743,8 +836,9 @@ const interval = setInterval(() => {
 
 <p>If you want a hover effect on table rows, use the table-hover class in addition to fds-table. Note that this should only be used on tables where the entire row is actionable.</p>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;table class="fds-table table-hover">&lt;/table>
-</code></pre>
+<pre class="demo" data-code='
+<table class="fds-table table-hover"></table>
+'></pre>
 
 <h3 class="h3 mt6 mb4">Tabs</h3>
 
@@ -753,11 +847,12 @@ const interval = setInterval(() => {
   <button class="tab">Inactive</button>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="fds-tabs">
-  &lt;button class="tab tab--active">Active&lt;/button>
-  &lt;button class="tab">Inactive&lt;/button>
-&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="fds-tabs">
+  <button class="tab tab--active">Active</button>
+  <button class="tab">Inactive</button>
+</div>
+'></pre>
 
 <div class="bg-black-tint-95 p2 flex">
   <div class="fds-tabs--gray">
@@ -766,11 +861,12 @@ const interval = setInterval(() => {
   </div>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="fds-tabs--gray">
-  &lt;button class="tab tab--active">Active&lt;/button>
-  &lt;button class="tab">Inactive&lt;/button>
-&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="fds-tabs--gray">
+  <button class="tab tab--active">Active</button>
+  <button class="tab">Inactive</button>
+</div>
+'></pre>
 
 <div class="bg-black p2 flex">
   <div class="fds-tabs--dark">
@@ -779,10 +875,12 @@ const interval = setInterval(() => {
   </div>
 </div>
 
-<pre class="mt4 mb6 p2 bg-black-tint-90"><code>&lt;div class="fds-tabs--dark">
-  &lt;button class="tab tab--active">Active&lt;/button>
-  &lt;button class="tab">Inactive&lt;/button>
-&lt;/div>
-</code></pre>
+<pre class="demo" data-code='
+<div class="fds-tabs--dark">
+  <button class="tab tab--active">Active</button>
+  <button class="tab">Inactive</button>
+</div>
+'></pre>
+
 </body>
 </html>
