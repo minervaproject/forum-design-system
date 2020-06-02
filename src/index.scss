@@ -1,12 +1,12 @@
-@import "typography";
-@import "colors";
-@import "outline";
+@import "_typography";
+@import "_colors";
+@import "_outline";
 
-@import "avatars";
-@import "buttons";
-@import "links";
-@import "spacing";
+@import "_avatars";
+@import "_buttons";
+@import "_links";
+@import "_spacing";
 
-@import "components/progress-bar";
-@import "components/table";
-@import "components/tabs";
+@import "components/_progress-bar";
+@import "components/_table";
+@import "components/_tabs";

@@ -588,7 +588,12 @@
   object-fit: cover;
   overflow: hidden;
   position: relative;
+  font-family: var(--sans-font-family);
   font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  font-weight: var(--font-weight-bold);
   height: 48px;
   width: 48px; }
   .avatar-large:after {
@@ -610,7 +615,11 @@
   object-fit: cover;
   overflow: hidden;
   position: relative;
+  font-family: var(--sans-font-family);
   font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(4 / 3);
   height: 32px;
   width: 32px; }
   .avatar-medium:after {
@@ -632,7 +641,11 @@
   object-fit: cover;
   overflow: hidden;
   position: relative;
+  font-family: var(--sans-font-family);
   font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(4 / 3);
   height: 24px;
   width: 24px; }
   .avatar-small:after {
