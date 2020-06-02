@@ -22,8 +22,7 @@
 
 .avatar-large {
   @include avatar-base;
-  @include body;
-  font-weight: var(--font-weight-bold);
+  @include body(var(--font-weight-bold));
   height: 48px;
   width: 48px;
 }
