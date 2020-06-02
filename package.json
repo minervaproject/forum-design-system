@@ -14,6 +14,10 @@
   },
   "homepage": "https://github.com/minervaproject/forum-design-system#readme",
   "scripts": {
-    "build": "sass src/index.scss dist/forum-design-system.css"
+    "build": "node-sass src/index.scss dist/forum-design-system.css",
+    "start": "node-sass -w src/index.scss dist/forum-design-system.css"
+  },
+  "devDependencies": {
+    "node-sass": "4.14.1"
   }
 }
