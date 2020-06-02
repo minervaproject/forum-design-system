@@ -41,14 +41,14 @@
   width: 24px;
 }
 
-// Example .avatar-overlap rules:
-// .avatar-overlap > img:nth-child(2) { transform: translateX(-25%); z-index: -1; }
-// .avatar-overlap > img:nth-child(3) { transform: translateX(-50%); z-index: -2; }
 .avatar-overlap {
-  @for $i from 1 through 19 {
-    img:nth-child(#{$i + 1}) {
-      transform: translateX(-25% * $i);
-      z-index: -1 * $i;
-    }
+  & > .avatar-large:not(:first-child) {
+    margin-left: -12px;
+  }
+  & > .avatar-medium:not(:first-child) {
+    margin-left: -8px;
+  }
+  & > .avatar-small:not(:first-child) {
+    margin-left: -4px;
   }
 }

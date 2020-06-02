@@ -1,4 +1,4 @@
-// Faux-outline using box-shadow as normal CSS outline doesn't respect board-radius.
+// Faux-outline using box-shadow as normal CSS outline doesn't respect border-radius.
 
 @each $name, $color in $all-colors {
   .outline-2-#{$name} {

@@ -648,81 +648,14 @@
     top: 0;
     width: 100%; }
 
-.avatar-overlap img:nth-child(2) {
-  transform: translateX(-25%);
-  z-index: -1; }
+.avatar-overlap > .avatar-large:not(:first-child) {
+  margin-left: -12px; }
 
-.avatar-overlap img:nth-child(3) {
-  transform: translateX(-50%);
-  z-index: -2; }
+.avatar-overlap > .avatar-medium:not(:first-child) {
+  margin-left: -8px; }
 
-.avatar-overlap img:nth-child(4) {
-  transform: translateX(-75%);
-  z-index: -3; }
-
-.avatar-overlap img:nth-child(5) {
-  transform: translateX(-100%);
-  z-index: -4; }
-
-.avatar-overlap img:nth-child(6) {
-  transform: translateX(-125%);
-  z-index: -5; }
-
-.avatar-overlap img:nth-child(7) {
-  transform: translateX(-150%);
-  z-index: -6; }
-
-.avatar-overlap img:nth-child(8) {
-  transform: translateX(-175%);
-  z-index: -7; }
-
-.avatar-overlap img:nth-child(9) {
-  transform: translateX(-200%);
-  z-index: -8; }
-
-.avatar-overlap img:nth-child(10) {
-  transform: translateX(-225%);
-  z-index: -9; }
-
-.avatar-overlap img:nth-child(11) {
-  transform: translateX(-250%);
-  z-index: -10; }
-
-.avatar-overlap img:nth-child(12) {
-  transform: translateX(-275%);
-  z-index: -11; }
-
-.avatar-overlap img:nth-child(13) {
-  transform: translateX(-300%);
-  z-index: -12; }
-
-.avatar-overlap img:nth-child(14) {
-  transform: translateX(-325%);
-  z-index: -13; }
-
-.avatar-overlap img:nth-child(15) {
-  transform: translateX(-350%);
-  z-index: -14; }
-
-.avatar-overlap img:nth-child(16) {
-  transform: translateX(-375%);
-  z-index: -15; }
-
-.avatar-overlap img:nth-child(17) {
-  transform: translateX(-400%);
-  z-index: -16; }
-
-.avatar-overlap img:nth-child(18) {
-  transform: translateX(-425%);
-  z-index: -17; }
-
-.avatar-overlap img:nth-child(19) {
-  transform: translateX(-450%);
-  z-index: -18; }
-
-.avatar-overlap img:nth-child(20) {
-  transform: translateX(-475%);
-  z-index: -19; }
+.avatar-overlap > .avatar-small:not(:first-child) {
+  margin-left: -4px; }
 
 .button-primary {
   font-family: var(--sans-font-family);
