@@ -1,4 +1,4 @@
-@mixin avatar-base {
+@mixin profile-photo-base {
   border-radius: 50%;
   display: inline-block;
   object-fit: cover;
@@ -20,35 +20,35 @@
   }
 }
 
-.avatar-large {
-  @include avatar-base;
+.profile-photo-large {
+  @include profile-photo-base;
   @include body(var(--font-weight-bold));
   height: 48px;
   width: 48px;
 }
 
-.avatar-medium {
-  @include avatar-base;
+.profile-photo-medium {
+  @include profile-photo-base;
   @include body-xs;
   height: 32px;
   width: 32px;
 }
 
-.avatar-small {
-  @include avatar-base;
+.profile-photo-small {
+  @include profile-photo-base;
   @include body-xs;
   height: 24px;
   width: 24px;
 }
 
-.avatar-overlap {
-  & > .avatar-large:not(:first-child) {
+.profile-photo-overlap {
+  & > .profile-photo-large:not(:first-child) {
     margin-left: -12px;
   }
-  & > .avatar-medium:not(:first-child) {
+  & > .profile-photo-medium:not(:first-child) {
     margin-left: -8px;
   }
-  & > .avatar-small:not(:first-child) {
+  & > .profile-photo-small:not(:first-child) {
     margin-left: -4px;
   }
 }
