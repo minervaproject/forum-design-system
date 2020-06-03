@@ -1,85 +1,3 @@
-@font-face {
-  font-family: "Chronicle Deck A", "Chronicle Deck B";
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Chronicle Deck A", "Chronicle Deck B";
-  font-weight: 600;
-  font-style: normal; }
-
-:root {
-  --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
-  --sans-font-family: "acumin-pro", sans-serif;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600; }
-
-.h1 {
-  font-family: var(--serif-font-family);
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: calc(11 / 9); }
-
-.h2 {
-  font-family: var(--serif-font-family);
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: calc(4 / 3); }
-
-.h3 {
-  font-family: var(--serif-font-family);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: calc(4 / 3); }
-
-.h4 {
-  font-family: var(--serif-font-family);
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: calc(10 / 7); }
-
-.body-l {
-  font-family: var(--sans-font-family);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: calc(4 / 3); }
-
-.body {
-  font-family: var(--sans-font-family);
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: 1.5; }
-
-.body-s {
-  font-family: var(--sans-font-family);
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: calc(10 / 7); }
-
-.body-xs {
-  font-family: var(--sans-font-family);
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: calc(4 / 3); }
-
-.dashboard-l {
-  font-family: var(--sans-font-family);
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1; }
-
-.bold {
-  font-weight: var(--font-weight-bold); }
-
 :root {
   --blue: #0A78BF;
   --blue-shade-40: #064873;
@@ -582,93 +500,87 @@
 .outline-2-hc-5 {
   box-shadow: 0 0 0 2px #5B3E97; }
 
-.avatar-large {
-  border-radius: 50%;
-  display: inline-block;
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Chronicle Deck A", "Chronicle Deck B";
+  font-weight: 600;
+  font-style: normal; }
+
+:root {
+  --serif-font-family: "Chronicle Deck A", "Chronicle Deck B", "Chronicle SSm A", "Chronicle SSm B", serif;
+  --sans-font-family: "acumin-pro", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600; }
+
+.h1 {
+  font-family: var(--serif-font-family);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(11 / 9); }
+
+.h2 {
+  font-family: var(--serif-font-family);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(4 / 3); }
+
+.h3 {
+  font-family: var(--serif-font-family);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(4 / 3); }
+
+.h4 {
+  font-family: var(--serif-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: calc(10 / 7); }
+
+.body-l {
+  font-family: var(--sans-font-family);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(4 / 3); }
+
+.body {
   font-family: var(--sans-font-family);
   font-size: 1rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: 1.5;
-  font-weight: var(--font-weight-bold);
-  height: 48px;
-  width: 48px; }
-  .avatar-large:after {
-    align-items: center;
-    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
-    color: var(--white);
-    content: attr(alt);
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
+  line-height: 1.5; }
 
-.avatar-medium {
-  border-radius: 50%;
-  display: inline-block;
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
+.body-s {
+  font-family: var(--sans-font-family);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(10 / 7); }
+
+.body-xs {
   font-family: var(--sans-font-family);
   font-size: 0.75rem;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  line-height: calc(4 / 3);
-  height: 32px;
-  width: 32px; }
-  .avatar-medium:after {
-    align-items: center;
-    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
-    color: var(--white);
-    content: attr(alt);
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
+  line-height: calc(4 / 3); }
 
-.avatar-small {
-  border-radius: 50%;
-  display: inline-block;
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
+.dashboard-l {
   font-family: var(--sans-font-family);
-  font-size: 0.75rem;
+  font-size: 3rem;
   font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: calc(4 / 3);
-  height: 24px;
-  width: 24px; }
-  .avatar-small:after {
-    align-items: center;
-    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
-    color: var(--white);
-    content: attr(alt);
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
+  font-weight: 300;
+  line-height: 1; }
 
-.avatar-overlap > .avatar-large:not(:first-child) {
-  margin-left: -12px; }
-
-.avatar-overlap > .avatar-medium:not(:first-child) {
-  margin-left: -8px; }
-
-.avatar-overlap > .avatar-small:not(:first-child) {
-  margin-left: -4px; }
+.bold {
+  font-weight: var(--font-weight-bold); }
 
 .button-primary {
   font-family: var(--sans-font-family);
@@ -1109,6 +1021,93 @@ a.underlined-link, .underlined-links a {
     color: var(--blue); }
   a.underlined-link:active, .underlined-links a:active {
     color: var(--blue-shade-40); }
+
+.profile-photo-large {
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  height: 48px;
+  width: 48px; }
+  .profile-photo-large:after {
+    align-items: center;
+    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
+    color: var(--white);
+    content: attr(alt);
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.profile-photo-medium {
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(4 / 3);
+  height: 32px;
+  width: 32px; }
+  .profile-photo-medium:after {
+    align-items: center;
+    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
+    color: var(--white);
+    content: attr(alt);
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.profile-photo-small {
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--sans-font-family);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: calc(4 / 3);
+  height: 24px;
+  width: 24px; }
+  .profile-photo-small:after {
+    align-items: center;
+    background: linear-gradient(var(--black-tint-70), var(--black-tint-40));
+    color: var(--white);
+    content: attr(alt);
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.profile-photo-overlap > .profile-photo-large:not(:first-child) {
+  margin-left: -12px; }
+
+.profile-photo-overlap > .profile-photo-medium:not(:first-child) {
+  margin-left: -8px; }
+
+.profile-photo-overlap > .profile-photo-small:not(:first-child) {
+  margin-left: -4px; }
 
 :root {
   --space-1: 4px;
