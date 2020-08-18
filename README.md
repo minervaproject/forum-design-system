@@ -43,3 +43,8 @@ yarn start
 After making changes, run `yarn build` to update `dist/forum-design-system.css`.
 
 Note: if you add or change styles, make sure you update the documentation in `index.html`.
+
+## Releasing
+
+To release a new version, first update the version number in `package.json`. Then create a new release [here](https://github.com/minervaproject/forum-design-system/releases).
+
