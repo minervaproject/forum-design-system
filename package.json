@@ -1,6 +1,6 @@
 {
   "name": "forum-design-system",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "description": "",
   "style": "src/index.css",
   "main": "src/index.css",
