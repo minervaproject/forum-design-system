@@ -1113,10 +1113,10 @@ a.underlined-link, .underlined-links a {
   margin-left: -12px; }
 
 .profile-photo-overlap *:not(:first-child) .profile-photo-medium {
-  margin-left: -12px; }
+  margin-left: -8px; }
 
 .profile-photo-overlap *:not(:first-child) .profile-photo-small {
-  margin-left: -12px; }
+  margin-left: -4px; }
 
 :root {
   --space-1: 4px;
