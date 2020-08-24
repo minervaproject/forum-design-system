@@ -45,10 +45,26 @@
   & > .profile-photo-large:not(:first-child) {
     margin-left: -12px;
   }
+
   & > .profile-photo-medium:not(:first-child) {
     margin-left: -8px;
   }
+
   & > .profile-photo-small:not(:first-child) {
     margin-left: -4px;
+  }
+
+  *:not(:first-child) {
+    .profile-photo-large {
+      margin-left: -12px;
+    }
+
+    .profile-photo-medium {
+      margin-left: -8px;
+    }
+
+    .profile-photo-small {
+      margin-left: -4px;
+    }
   }
 }
