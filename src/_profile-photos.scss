@@ -20,6 +20,20 @@
   }
 }
 
+.profile-photo-xxl {
+  @include profile-photo-base;
+  @include body(var(--font-weight-bold));
+  height: 160px;
+  width: 160px;
+}
+
+.profile-photo-xl {
+  @include profile-photo-base;
+  @include body(var(--font-weight-bold));
+  height: 100px;
+  width: 100px;
+}
+
 .profile-photo-large {
   @include profile-photo-base;
   @include body(var(--font-weight-bold));

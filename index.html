@@ -261,12 +261,16 @@
 <h3 class="h3 mb4">Basic Example</h3>
 
 <div class="flex">
+  <img class="profile-photo-xxl" src="https://place-hold.it/160x160&fontsize=13" />
+  <img class="profile-photo-xl" src="https://place-hold.it/100x100&fontsize=11" />
   <img class="profile-photo-large" src="https://place-hold.it/48x48&fontsize=9" />
   <img class="profile-photo-medium" src="https://place-hold.it/32x32&fontsize=7" />
   <img class="profile-photo-small" src="https://place-hold.it/24x24&fontsize=5" />
 </div>
 
 <pre class="demo" data-code='
+<img class="profile-photo-xxl" src="https://place-hold.it/160x160&fontsize=13" />
+<img class="profile-photo-xl" src="https://place-hold.it/100x100&fontsize=11" />
 <img class="profile-photo-large" src="https://place-hold.it/48x48&fontsize=9" />
 <img class="profile-photo-medium" src="https://place-hold.it/32x32&fontsize=7" />
 <img class="profile-photo-small" src="https://place-hold.it/24x24&fontsize=5" />
@@ -275,15 +279,19 @@
 <h3 class="h3 mb4">Initials Placeholder</h3>
 
 <div class="flex">
-  <img alt="AB" class="profile-photo-large" src="404" />
-  <img alt="CD" class="profile-photo-medium" src="404" />
-  <img alt="EF" class="profile-photo-small" src="404" />
+  <img alt="AB" class="profile-photo-xxl" src="404" />
+  <img alt="CD" class="profile-photo-xl" src="404" />
+  <img alt="EF" class="profile-photo-large" src="404" />
+  <img alt="GH" class="profile-photo-medium" src="404" />
+  <img alt="IJ" class="profile-photo-small" src="404" />
 </div>
 
 <pre class="demo" data-code='
-<img alt="AB" class="profile-photo-large" src="404" />
-<img alt="CD" class="profile-photo-medium" src="404" />
-<img alt="EF" class="profile-photo-small" src="404" />
+<img alt="AB" class="profile-photo-xxl" src="404" />
+<img alt="CD" class="profile-photo-xl" src="404" />
+<img alt="EF" class="profile-photo-large" src="404" />
+<img alt="GH" class="profile-photo-medium" src="404" />
+<img alt="IJ" class="profile-photo-small" src="404" />
 '></pre>
 
 <h3 class="h3 mb4">Object Fit</h3>
@@ -499,13 +507,13 @@
 <p>These buttons are used as menu buttons. Icons can be SVGs or fonts. (In the example below, the first button uses an SVG while the second button uses an icon font.) There are also two color variations, light and red.</p>
 
 <div class="bg-black p2 flex">
-  <button class="circle-button mr2">
+  <button class="circle-button--dark mr2">
     <img src="icons/icon-star.svg" alt="Sample icon">
   </button>
-  <button class="circle-button mr2">
+  <button class="circle-button--dark mr2">
     <span class="fas fa-star"></span>
   </button>
-  <button class="circle-button--light mr2">
+  <button class="circle-button--transparent mr2">
     <img src="icons/icon-star.svg" alt="Sample icon">
   </button>
   <button class="circle-button--red">
@@ -514,15 +522,15 @@
 </div>
 
 <pre class="demo" data-code='
-<button class="circle-button mr2">
+<button class="circle-button--dark mr2">
   <img src="icons/icon-star.svg" alt="Sample icon">
 </button>
 
-<button class="circle-button mr2">
+<button class="circle-button--dark mr2">
   <span class="fas fa-star"></span>
 </button>
 
-<button class="circle-button--light mr2">
+<button class="circle-button--transparent mr2">
   <img src="icons/icon-star.svg" alt="Sample icon">
 </button>
 
