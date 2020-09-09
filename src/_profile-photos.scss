@@ -20,14 +20,14 @@
   }
 }
 
-.profile-photo-xxl-large {
+.profile-photo-xxl {
   @include profile-photo-base;
   @include body(var(--font-weight-bold));
   height: 160px;
   width: 160px;
 }
 
-.profile-photo-xl-large {
+.profile-photo-xl {
   @include profile-photo-base;
   @include body(var(--font-weight-bold));
   height: 100px;
