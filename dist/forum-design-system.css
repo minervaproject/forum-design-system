@@ -500,6 +500,21 @@
 .outline-2-hc-5 {
   box-shadow: 0 0 0 2px #5B3E97; }
 
+.shadow-level-1 {
+  box-shadow: 0px 1px 3px 0px rgba(1, 1, 1, 0.12); }
+
+.shadow-level-2 {
+  box-shadow: 0px 1px 3px 0px rgba(1, 1, 1, 0.12), 0px 1px 1px 0px rgba(1, 1, 1, 0.14), 0px 2px 1px 0px rgba(1, 1, 1, 0.2); }
+
+.shadow-level-3 {
+  box-shadow: 0px 1px 8px 0px rgba(1, 1, 1, 0.12), 0px 3px 4px 0px rgba(1, 1, 1, 0.14); }
+
+.shadow-level-4 {
+  box-shadow: 0px 1px 8px 0px rgba(1, 1, 1, 0.12), 0px 3px 4px 0px rgba(1, 1, 1, 0.12), 0px 3px 3px 0px rgba(1, 1, 1, 0.12); }
+
+.shadow-level-5 {
+  box-shadow: 0px 1px 18px 0px rgba(1, 1, 1, 0.12), 0px 6px 10px 0px rgba(1, 1, 1, 0.14); }
+
 @font-face {
   font-family: "Chronicle Deck A", "Chronicle Deck B";
   font-weight: 400;
