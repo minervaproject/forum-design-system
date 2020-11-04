@@ -805,7 +805,6 @@
   .text-button-classroom-secondary:disabled {
     color: var(--black-tint-40); }
 
-.circle-button,
 .circle-button--dark {
   transition: all 0.3s ease 0s;
   height: 32px;
@@ -820,34 +819,26 @@
   background-color: var(--black);
   border: 2px solid var(--black-tint-20);
   color: var(--black-tint-40); }
-  .circle-button > *:first-child,
   .circle-button--dark > *:first-child {
     height: 16px !important;
     width: 16px !important; }
-  .circle-button:disabled,
   .circle-button--dark:disabled {
     cursor: not-allowed; }
-  .circle-button > *:first-child,
   .circle-button--dark > *:first-child {
     filter: none; }
-  .circle-button:hover:enabled,
   .circle-button--dark:hover:enabled {
     background-color: var(--black-tint-95);
     border-color: var(--black-tint-95);
     color: var(--black-tint-40); }
-    .circle-button:hover:enabled > *:first-child,
     .circle-button--dark:hover:enabled > *:first-child {
       filter: none; }
-  .circle-button:active:enabled,
   .circle-button--dark:active:enabled {
     background-color: var(--black-tint-20);
     border-color: var(--black-tint-20);
     color: var(--white); }
-    .circle-button:active:enabled > *:first-child,
     .circle-button--dark:active:enabled > *:first-child {
       filter: brightness(100); }
 
-.circle-button--light,
 .circle-button--transparent {
   transition: all 0.3s ease 0s;
   height: 32px;
@@ -862,30 +853,23 @@
   background-color: transparent;
   border: 2px solid var(--black-tint-40);
   color: var(--black-tint-90); }
-  .circle-button--light > *:first-child,
   .circle-button--transparent > *:first-child {
     height: 16px !important;
     width: 16px !important; }
-  .circle-button--light:disabled,
   .circle-button--transparent:disabled {
     cursor: not-allowed; }
-  .circle-button--light > *:first-child,
   .circle-button--transparent > *:first-child {
     filter: brightness(2); }
-  .circle-button--light:hover:enabled,
   .circle-button--transparent:hover:enabled {
     background-color: var(--black-tint-95);
     border-color: var(--black-tint-95);
     color: var(--black-tint-40); }
-    .circle-button--light:hover:enabled > *:first-child,
     .circle-button--transparent:hover:enabled > *:first-child {
       filter: none; }
-  .circle-button--light:active:enabled,
   .circle-button--transparent:active:enabled {
     background-color: var(--black-tint-20);
     border-color: var(--black-tint-20);
     color: var(--white); }
-    .circle-button--light:active:enabled > *:first-child,
     .circle-button--transparent:active:enabled > *:first-child {
       filter: brightness(100); }
 
