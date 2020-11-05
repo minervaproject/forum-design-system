@@ -210,7 +210,6 @@
   }
 }
 
-.circle-button,
 .circle-button--dark {
   @include base-circle-button;
   background-color: var(--black);
@@ -242,7 +241,6 @@
   }
 }
 
-.circle-button--light,
 .circle-button--transparent {
   @include base-circle-button;
   background-color: transparent;
