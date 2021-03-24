@@ -1688,12 +1688,15 @@ a.underlined-link, .underlined-links a {
     margin-right: 16px;
     padding: 0 0 2px 0;
     transition: all 0.3s ease 0s; }
+    .fds-tabs .tab:focus {
+      outline: none; }
   .fds-tabs .tab {
-    color: var(--black-tint-70); }
+    color: var(--black-tint-40); }
     .fds-tabs .tab:hover {
+      color: var(--black-tint-40);
       border-color: var(--black-tint-70); }
     .fds-tabs .tab:active {
-      color: var(--black-tint-40);
+      color: var(--black-tint-20);
       border-color: var(--black-tint-40); }
     .fds-tabs .tab--active {
       color: var(--black-tint-20);
@@ -1714,6 +1717,8 @@ a.underlined-link, .underlined-links a {
     margin-right: 16px;
     padding: 0 0 2px 0;
     transition: all 0.3s ease 0s; }
+    .fds-tabs--dark .tab:focus {
+      outline: none; }
   .fds-tabs--dark .tab {
     color: var(--black-tint-70); }
     .fds-tabs--dark .tab:hover {
@@ -1723,30 +1728,4 @@ a.underlined-link, .underlined-links a {
       border-color: var(--black-tint-90); }
     .fds-tabs--dark .tab--active {
       color: var(--white);
-      border-color: var(--blue); }
-
-.fds-tabs--gray {
-  display: flex; }
-  .fds-tabs--gray .tab {
-    font-family: var(--sans-font-family);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    line-height: calc(10 / 7);
-    background: none;
-    border: none;
-    border-bottom: 3px solid transparent;
-    cursor: pointer;
-    margin-right: 16px;
-    padding: 0 0 2px 0;
-    transition: all 0.3s ease 0s; }
-  .fds-tabs--gray .tab {
-    color: var(--black-tint-40); }
-    .fds-tabs--gray .tab:hover {
-      border-color: var(--black-tint-40); }
-    .fds-tabs--gray .tab:active {
-      color: var(--black-tint-20);
-      border-color: var(--black-tint-20); }
-    .fds-tabs--gray .tab--active {
-      color: var(--black-tint-20);
       border-color: var(--blue); }

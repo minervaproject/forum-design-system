@@ -10,6 +10,10 @@
     margin-right: 16px;
     padding: 0 0 2px 0;
     transition: all 0.3s ease 0s;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -17,14 +21,15 @@
   @include base-tabs;
 
   .tab {
-    color: var(--black-tint-70);
+    color: var(--black-tint-40);
 
     &:hover {
+      color: var(--black-tint-40);
       border-color: var(--black-tint-70);
     }
 
     &:active {
-      color: var(--black-tint-40);
+      color: var(--black-tint-20);
       border-color: var(--black-tint-40);
     }
 
@@ -52,28 +57,6 @@
 
     &--active {
       color: var(--white);
-      border-color: var(--blue);
-    }
-  }
-}
-
-.fds-tabs--gray {
-  @include base-tabs;
-
-  .tab {
-    color: var(--black-tint-40);
-
-    &:hover {
-      border-color: var(--black-tint-40);
-    }
-
-    &:active {
-      color: var(--black-tint-20);
-      border-color: var(--black-tint-20);
-    }
-
-    &--active {
-      color: var(--black-tint-20);
       border-color: var(--blue);
     }
   }
