@@ -287,6 +287,12 @@
 .text-white {
   color: var(--white); }
 
+.text-red {
+  color: var(--red); }
+
+.text-green {
+  color: var(--green); }
+
 .text-hc-0 {
   color: var(--hc-0) !important; }
 
