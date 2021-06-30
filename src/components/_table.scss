@@ -4,20 +4,19 @@
   table-layout: fixed;
   width: 100%;
 
+  th, .th {
+    @include body-xs;
+    color: var(--black-tint-40);
+    text-align: left;
+    padding: var(--space-2) var(--space-2) var(--space-2) 0;
+  }
+
   th:first-child, .th:first-child {
     padding-left: var(--space-5);
   }
 
   th:last-child, .th:last-child {
     padding-right: var(--space-5);
-  }
-
-  th, .th {
-    @include body-xs;
-    color: var(--black-tint-40);
-    text-align: left;
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
   }
 
   tbody, .tbody {
