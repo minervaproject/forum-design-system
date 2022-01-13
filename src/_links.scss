@@ -25,3 +25,13 @@ a.underlined-link, .underlined-links a {
     color: var(--blue-shade-40);
   }
 }
+
+.tooltip-indicator-text--dark {
+  border-bottom: 1px dashed var(--black-tint-40);
+  cursor: pointer;
+}
+
+.tooltip-indicator-text--light {
+  border-bottom: 1px dashed var(--white);
+  cursor: pointer;
+}
