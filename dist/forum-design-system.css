@@ -287,11 +287,35 @@
 .text-white {
   color: var(--white); }
 
-.text-red {
-  color: var(--red); }
+.text-blue {
+  color: #0A78BF; }
+
+.text-blue-green {
+  color: #1596B4; }
 
 .text-green {
-  color: var(--green); }
+  color: #33AB6F; }
+
+.text-yellow-green {
+  color: #8EA604; }
+
+.text-yellow {
+  color: #F0B91E; }
+
+.text-orange {
+  color: #F0871E; }
+
+.text-red {
+  color: #DF2F26; }
+
+.text-red-violet {
+  color: #A5417D; }
+
+.text-violet {
+  color: #5B3E97; }
+
+.text-blue-violet {
+  color: #322864; }
 
 .text-hc-0 {
   color: var(--hc-0) !important; }
