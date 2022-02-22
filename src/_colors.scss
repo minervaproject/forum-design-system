@@ -111,12 +111,10 @@ $all-colors: map-merge($all-colors, (
   color: var(--white);
 }
 
-.text-red {
-  color: var(--red);
-}
-
-.text-green {
-  color: var(--green);
+@each $name, $color in $base-colors {
+  .text-#{$name} {
+    color: $color;
+  }
 }
 
 .text-hc-0 {
