@@ -1641,6 +1641,58 @@ a.underlined-link, .underlined-links a {
   padding-top: 40px;
   padding-bottom: 40px; }
 
+.status-black-tint-40 {
+  color: var(--black-tint-40);
+  display: flex;
+  align-items: center; }
+  .status-black-tint-40::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--black-tint-40);
+    margin-right: 0.25rem; }
+
+.status-green {
+  color: var(--green);
+  display: flex;
+  align-items: center; }
+  .status-green::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--green);
+    margin-right: 0.25rem; }
+
+.status-orange {
+  color: var(--orange);
+  display: flex;
+  align-items: center; }
+  .status-orange::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    margin-right: 0.25rem; }
+
+.status-red {
+  color: var(--red);
+  display: flex;
+  align-items: center; }
+  .status-red::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin-right: 0.25rem; }
+
 .fds-progress-bar {
   background-color: var(--black-tint-95);
   border-radius: 7px;
