@@ -1652,7 +1652,9 @@ a.underlined-link, .underlined-links a {
     height: 6px;
     border-radius: 50%;
     background-color: var(--black-tint-40);
-    margin-right: 0.25rem; }
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: -1px; }
 
 .status-green {
   color: var(--green);
@@ -1665,7 +1667,9 @@ a.underlined-link, .underlined-links a {
     height: 6px;
     border-radius: 50%;
     background-color: var(--green);
-    margin-right: 0.25rem; }
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: -1px; }
 
 .status-orange {
   color: var(--orange);
@@ -1678,7 +1682,9 @@ a.underlined-link, .underlined-links a {
     height: 6px;
     border-radius: 50%;
     background-color: var(--orange);
-    margin-right: 0.25rem; }
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: -1px; }
 
 .status-red {
   color: var(--red);
@@ -1691,7 +1697,9 @@ a.underlined-link, .underlined-links a {
     height: 6px;
     border-radius: 50%;
     background-color: var(--red);
-    margin-right: 0.25rem; }
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: -1px; }
 
 .fds-progress-bar {
   background-color: var(--black-tint-95);
