@@ -3,4 +3,4 @@ import HelloWorld from "./hello-world";
 
 export default { title: 'HelloWorld' };
 
-export const test = () => <HelloWorld name="China" />;
+export const test = () => <HelloWorld name="Minerva" />;

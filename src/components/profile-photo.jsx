@@ -66,4 +66,4 @@ const ProfilePhoto = forwardRef((props, ref) => {
 });
 ProfilePhoto.displayName = displayName;
 
-export default ProfilePhoto;
+export { ProfilePhoto };
