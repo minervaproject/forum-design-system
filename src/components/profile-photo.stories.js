@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from "./profile-photo";
+import { ProfilePhoto } from "./profile-photo";
 
 export default { title: 'ProfilePhoto' };
 
