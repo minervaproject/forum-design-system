@@ -57,6 +57,12 @@ $all-colors: map-merge($all-colors, (
         "hc-3": map-get($all-colors, "green"),
         "hc-4": map-get($all-colors, "blue"),
         "hc-5": map-get($all-colors, "violet"),
+        "hc-light-0": map-get($all-colors, "black-tint-90"),
+        "hc-light-1": map-get($all-colors, "red-tint-90"),
+        "hc-light-2": map-get($all-colors, "orange-tint-90"),
+        "hc-light-3": map-get($all-colors, "green-tint-90"),
+        "hc-light-4": map-get($all-colors, "blue-tint-90"),
+        "hc-light-5": map-get($all-colors, "violet-tint-90"),
 ));
 
 // Copy all Sass variables to CSS variables
