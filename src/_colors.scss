@@ -49,14 +49,20 @@ $all-colors: map-merge($all-colors, (
   ));
 }
 
-// Add aliases for HC colors
+// Add aliases for rubric / assessment score colors
 $all-colors: map-merge($all-colors, (
-        "hc-0": map-get($all-colors, "black-tint-90"),
-        "hc-1": map-get($all-colors, "red"),
-        "hc-2": map-get($all-colors, "orange"),
-        "hc-3": map-get($all-colors, "green"),
-        "hc-4": map-get($all-colors, "blue"),
-        "hc-5": map-get($all-colors, "violet"),
+        "score-0": map-get($all-colors, "black-tint-40"),
+        "score-1": map-get($all-colors, "red"),
+        "score-2": map-get($all-colors, "orange"),
+        "score-3": map-get($all-colors, "green"),
+        "score-4": map-get($all-colors, "blue"),
+        "score-5": map-get($all-colors, "violet"),
+        "score-light-0": map-get($all-colors, "black-tint-90"),
+        "score-light-1": map-get($all-colors, "red-tint-90"),
+        "score-light-2": map-get($all-colors, "orange-tint-90"),
+        "score-light-3": map-get($all-colors, "green-tint-90"),
+        "score-light-4": map-get($all-colors, "blue-tint-90"),
+        "score-light-5": map-get($all-colors, "violet-tint-90"),
 ));
 
 // Copy all Sass variables to CSS variables
@@ -117,26 +123,26 @@ $all-colors: map-merge($all-colors, (
   }
 }
 
-.text-hc-0 {
-  color: var(--hc-0) !important;
+.text-score-0 {
+  color: var(--score-0) !important;
 }
 
-.text-hc-1 {
-  color: var(--hc-1) !important;
+.text-score-1 {
+  color: var(--score-1) !important;
 }
 
-.text-hc-2 {
-  color: var(--hc-2) !important;
+.text-score-2 {
+  color: var(--score-2) !important;
 }
 
-.text-hc-3 {
-  color: var(--hc-3) !important;
+.text-score-3 {
+  color: var(--score-3) !important;
 }
 
-.text-hc-4 {
-  color: var(--hc-4) !important;
+.text-score-4 {
+  color: var(--score-4) !important;
 }
 
-.text-hc-5 {
-  color: var(--hc-5) !important;
+.text-score-5 {
+  color: var(--score-5) !important;
 }

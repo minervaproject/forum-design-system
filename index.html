@@ -200,19 +200,6 @@
   </div>
 </div>
 
-<h3 class="h3 mt6 mb4">HC Colors</h3>
-
-<p>There are aliases for HC colors:</p>
-
-<div>
-  <div class="swatch bg-hc-0 text-black">bg-hc-0</div>
-  <div class="swatch bg-hc-1 text-white">bg-hc-1</div>
-  <div class="swatch bg-hc-2 text-black">bg-hc-2</div>
-  <div class="swatch bg-hc-3 text-black">bg-hc-3</div>
-  <div class="swatch bg-hc-4 text-white">bg-hc-4</div>
-  <div class="swatch bg-hc-5 text-white">bg-hc-5</div>
-</div>
-
 <h3 class="h3 mt6 mb4">Text Colors</h3>
 
 <p>Use these classes to set text color:</p>
@@ -239,15 +226,43 @@
   <div class="swatch bg-white text-blue-violet">text-blue-violet</div>
 </div>
 
-<p>There are aliases for HC colors:</p>
+<h3 class="h3 mt6 mb4">Rubric / Assessment Score Colors</h3>
 
-<div>
-  <div class="swatch bg-black text-hc-0">text-hc-0</div>
-  <div class="swatch bg-white text-hc-1">text-hc-1</div>
-  <div class="swatch bg-white text-hc-2">text-hc-2</div>
-  <div class="swatch bg-white text-hc-3">text-hc-3</div>
-  <div class="swatch bg-white text-hc-4">text-hc-4</div>
-  <div class="swatch bg-white text-hc-5">text-hc-5</div>
+<p>
+  There are aliases for colors used in the display of rubric and assessment scores.
+  They come in dark and light shades for backgrounds, and in dark shades for text
+  colors. The number at the end corresponds to the score value being rendered, in
+  the range 0 - 5. You can also refer to the colors directly in CSS expressions,
+  e.g.,<code>var(--score-0)</code> or <code>var(--score-light-5)</code>.
+</p>
+
+<div class="flex mb4">
+  <div class="mr4">
+    <div class="swatch bg-score-0 text-white">bg-score-0</div>
+    <div class="swatch bg-score-1 text-white">bg-score-1</div>
+    <div class="swatch bg-score-2 text-white">bg-score-2</div>
+    <div class="swatch bg-score-3 text-white">bg-score-3</div>
+    <div class="swatch bg-score-4 text-white">bg-score-4</div>
+    <div class="swatch bg-score-5 text-white">bg-score-5</div>
+  </div>
+
+  <div>
+    <div class="swatch bg-score-light-0 text-black">bg-score-light-0</div>
+    <div class="swatch bg-score-light-1 text-black">bg-score-light-1</div>
+    <div class="swatch bg-score-light-2 text-black">bg-score-light-2</div>
+    <div class="swatch bg-score-light-3 text-black">bg-score-light-3</div>
+    <div class="swatch bg-score-light-4 text-black">bg-score-light-4</div>
+    <div class="swatch bg-score-light-5 text-black">bg-score-light-5</div>
+  </div>
+
+  <div>
+    <div class="swatch bg-white text-score-0">text-score-0</div>
+    <div class="swatch bg-white text-score-1">text-score-1</div>
+    <div class="swatch bg-white text-score-2">text-score-2</div>
+    <div class="swatch bg-white text-score-3">text-score-3</div>
+    <div class="swatch bg-white text-score-4">text-score-4</div>
+    <div class="swatch bg-white text-score-5">text-score-5</div>
+  </div>
 </div>
 
 <h2 class="h2 mt10 mb4" id="status">Status</h2>
