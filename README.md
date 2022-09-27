@@ -44,6 +44,13 @@ After making changes, run `yarn build` to update `dist/forum-design-system.css`.
 
 Note: if you add or change styles, make sure you update the documentation in `index.html`.
 
+To use your local version of forum-design-system on a local picasso or cb, do the following:
+```
+cd <path-to>/picasso/client/node_modules/forum-design-system
+rm -rf dist
+ln -s <path-to>/forum-design-system/dist .
+```
+
 ## Releasing
 
 To release a new version, first update the version number in `package.json`. Then create a new release [here](https://github.com/minervaproject/forum-design-system/releases).
