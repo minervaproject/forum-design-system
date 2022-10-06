@@ -1799,6 +1799,8 @@ a.underlined-link, .underlined-links a {
     font-style: normal;
     font-weight: var(--font-weight-normal);
     line-height: calc(10 / 7); }
+    .fds-table tbody tr:nth-child(n).makeup-work-unsubmitted, .fds-table .tbody tr:nth-child(n).makeup-work-unsubmitted {
+      background-color: var(--orange-tint-90); }
     .fds-table tbody tr:nth-child(2n+1), .fds-table tbody .tr:nth-child(2n+1), .fds-table .tbody tr:nth-child(2n+1), .fds-table .tbody .tr:nth-child(2n+1) {
       background-color: var(--black-tint-97); }
   .fds-table td, .fds-table .td {
