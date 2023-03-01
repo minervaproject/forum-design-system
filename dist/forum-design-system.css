@@ -753,7 +753,8 @@
   .icon-button-primary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
   .icon-button-primary:hover {
     text-decoration: none; }
   .icon-button-primary:hover:enabled {
@@ -789,7 +790,8 @@
   .icon-button-secondary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
   .icon-button-secondary:hover {
     text-decoration: none; }
   .icon-button-secondary:hover:enabled {
@@ -844,7 +846,8 @@
   .text-button-classroom-primary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
   .text-button-classroom-primary:active:enabled {
     color: var(--white); }
 
@@ -871,7 +874,8 @@
   .text-button-classroom-secondary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
   .text-button-classroom-secondary:active:enabled {
     color: var(--white); }
   .text-button-classroom-secondary:disabled {
@@ -1031,7 +1035,8 @@
   .icon-button-classroom-primary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
 
 .button-classroom-secondary {
   transition: all 0.3s ease 0s;
@@ -1053,7 +1058,8 @@
   .button-classroom-secondary > *:first-child {
     height: auto;
     width: 16px !important;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex: none; }
   .button-classroom-secondary:hover:enabled {
     background-color: var(--black-tint-40); }
   .button-classroom-secondary:active:enabled {
