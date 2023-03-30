@@ -1,4 +1,6 @@
-# Forum Design System
+# Forum Design System - DEPRECATED
+
+Updates should no longer be made here!!!
 
 ## Prerequisites
 
